@@ -1,0 +1,9 @@
+{
+    "cSpell.words": [
+        "Nuxt",
+        "nuxtjs",
+        "powerlifter",
+        "tailwindcss"
+    ],
+    "typescript.tsdk": "node_modules/typescript/lib"
+}

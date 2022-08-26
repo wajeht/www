@@ -4,7 +4,8 @@
         "Nuxt",
         "nuxtjs",
         "powerlifter",
-        "tailwindcss"
+        "tailwindcss",
+        "wajeht"
     ],
     "typescript.tsdk": "node_modules/typescript/lib"
 }

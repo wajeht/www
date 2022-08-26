@@ -41,7 +41,7 @@ function generateRandomPicture(): void {
           </div>
 
           <!-- name and description -->
-          <div class="flex justify-center lg:justify-end ">
+          <div class="flex justify-center lg:justify-end">
             <div class="flex flex-col">
 
               <span class="flex justify-end gap-2">
@@ -59,7 +59,9 @@ function generateRandomPicture(): void {
               </span>
 
               <!-- description -->
-              <p>a competitive powerlifter...</p>
+              <VueWriter
+                :array="['A software developer..', 'a competitive powerlifter..', 'a strength consultant..', 'a sushi chef..']"
+                :delay="1000" :eraseSpeed="50" :typeSpeed="50" />
             </div>
           </div>
 
@@ -70,7 +72,10 @@ function generateRandomPicture(): void {
       </div>
 
       <!-- side bar copyright -->
-      <div class="hidden text-xs font-light lg:block text-zinc-500">© 2022 jaw.dev. All Rights Reserved.</div>
+      <div class="hidden text-xs font-light lg:block text-zinc-500">© 2022 jaw.dev.
+        Made with ❤️ by <a class="hover:text-[color:#D4D3D2]" href="https://www.github.com/wajeht/jaw-dev"
+          target="_blank">@wajeht</a>
+      </div>
     </aside>
 
     <!-- main -->
@@ -85,8 +90,8 @@ function generateRandomPicture(): void {
 
       <!-- copyright -->
       <div class="mt-2 text-xs font-light text-center lg:hidden sm:block text-zinc-500">© 2022 jaw.dev.
-        All Rights
-        Reserved.
+        Made with ❤️ by <a class="hover:text-[color:#D4D3D2]" href="https://www.github.com/wajeht/jaw-dev"
+          target="_blank">@wajeht</a>
       </div>
     </main>
   </div>

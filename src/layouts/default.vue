@@ -19,7 +19,6 @@ const randomProfilePicture = ref('./jaw.jpg');
 const currentImageIndex = ref(-1);
 
 function generateRandomPicture(): void {
-  console.log(currentImageIndex.value);
   if (currentImageIndex.value === 2) currentImageIndex.value = -1;
   currentImageIndex.value++;
   randomProfilePicture.value = pictures.value[currentImageIndex.value].url.toString();

@@ -1,8 +1,4 @@
 <template>
-    <div>
-        <h1>404</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quam eos, harum iusto quisquam, maiores ducimus
-            reprehenderit labore a soluta non, sequi delectus! Incidunt, omnis adipisci earum unde blanditiis dolores!
-        </p>
-    </div>
+    <Card title="404"
+        description="On no, can't find what you're looking for! Instead, watch me lifting some serious weight here!" />
 </template>

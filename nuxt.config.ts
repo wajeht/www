@@ -6,11 +6,7 @@ export default defineNuxtConfig({
         title: 'jaw.dev'
     },
     srcDir: './src',
-    image: {
-        dir: './public/images'
-    },
     modules: [
         '@nuxtjs/tailwindcss',
-        '@nuxt/image-edge',
     ],
 })

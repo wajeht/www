@@ -5,17 +5,17 @@ const route = useRoute();
 
 const pictures = ref<{ url: String, }[]>([
   {
-    url: 'blue.jpg'
+    url: '/images/blue.jpg'
   },
   {
-    url: 'jaw.jpg'
+    url: '/images/jaw.jpg'
   },
   {
-    url: 'strength.jpeg'
+    url: '/images/strength.jpeg'
   }
 ])
 
-const randomProfilePicture = ref('jaw.jpg');
+const randomProfilePicture = ref('/images/jaw.jpg');
 const currentImageIndex = ref(-1);
 
 function generateRandomPicture(): void {
@@ -36,7 +36,7 @@ function generateRandomPicture(): void {
         <div class="flex flex-col gap-5">
           <!-- image -->
           <div class="flex justify-center lg:justify-end ">
-            <nuxt-img @click="generateRandomPicture()"
+            <img @click="generateRandomPicture()"
               class="w-24 h-24 border-2 border-solid rounded-full sm:text-center sm:justify-center sm:content-center border-[color:#939290] hover:border-[color:#FBF0DF] hover:cursor-pointer"
               :src="randomProfilePicture" />
           </div>

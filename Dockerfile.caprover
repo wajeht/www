@@ -6,9 +6,10 @@ COPY ./package.json ./
 COPY ./yarn.lock ./
 
 RUN yarn install
-RUN yarn build
 
 COPY ./ .
+
+RUN yarn build
 
 ENV NUXT_HOST=0.0.0.0
 ENV NUXT_PORT=3000

@@ -3,7 +3,7 @@ FROM node:alpine
 WORKDIR /usr/src/nuxt-app
 
 COPY ./package.json ./
-COPY ./yarnk.json ./
+COPY ./yarn.json ./
 
 RUN yarn install
 RUN yarn build

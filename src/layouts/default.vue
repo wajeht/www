@@ -1,5 +1,28 @@
 <script setup lang="ts">
+import { ref } from 'vue';
+
 const route = useRoute();
+
+const pictures = ref<{ url: String, }[]>([
+  {
+    url: './blue.jpg'
+  },
+  {
+    url: './jaw.jpg'
+  },
+  {
+    url: './strength.jpeg'
+  }
+])
+
+const randomProfilePicture = ref('./jaw.jpg');
+
+function generateRandomPicture(): void {
+  const length = pictures.value.length;
+  const random = Math.floor(Math.random() * (length - 0) + 0);
+  randomProfilePicture.value = pictures.value[random].url.toString();
+}
+
 </script>
 <template>
   <div class="lg:flex">
@@ -12,9 +35,9 @@ const route = useRoute();
         <div class="flex flex-col gap-5">
           <!-- image -->
           <div class="flex justify-center lg:justify-end ">
-            <img
+            <nuxt-img @click="generateRandomPicture()"
               class="w-24 h-24 border-2 border-solid rounded-full sm:text-center sm:justify-center sm:content-center border-[color:#939290] hover:border-[color:#FBF0DF] hover:cursor-pointer"
-              src="../assets/jaw.jpg">
+              :src="randomProfilePicture" />
           </div>
 
           <!-- name and description -->

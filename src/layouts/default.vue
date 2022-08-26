@@ -16,11 +16,13 @@ const pictures = ref<{ url: String, }[]>([
 ])
 
 const randomProfilePicture = ref('./jaw.jpg');
+const currentImageIndex = ref(-1);
 
 function generateRandomPicture(): void {
-  const length = pictures.value.length;
-  const random = Math.floor(Math.random() * (length - 0) + 0);
-  randomProfilePicture.value = pictures.value[random].url.toString();
+  console.log(currentImageIndex.value);
+  if (currentImageIndex.value === 2) currentImageIndex.value = -1;
+  currentImageIndex.value++;
+  randomProfilePicture.value = pictures.value[currentImageIndex.value].url.toString();
 }
 
 </script>

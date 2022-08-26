@@ -30,6 +30,66 @@ const projects = ref<Card[]>([
         title: 'gains',
         description: 'lorem Suscipit, accusantium iusto vel ipsum sequi fugiat est libero sunt nam eligendi, aperiam itaque asperiores nobis facilis doloremque ullam blanditiis rerum voluptas!'
     },
+    {
+        id: 1,
+        title: 'attempt calculator',
+        description: 'lorem Suscipit'
+    },
+    {
+        id: 2,
+        title: 'training log',
+        description: 'lorem Suscipit, accusantium iusto vel ipsum sequi fugiat est libero sunt nam eligendi, aperiam itaque asperiores nobis facilis doloremque ullam blanditiis rerum voluptas!'
+    },
+    {
+        id: 3,
+        title: 'unique login',
+        description: 'lorem Suscipit, accusantium iusto vel ipsum sequi fugiat est libero sunt nam eligendi, aperiam itaque asperiores nobis facilis doloremque ullam blanditiis rerum voluptas!'
+    },
+    {
+        id: 4,
+        title: 'gains',
+        description: 'lorem Suscipit, accusantium iusto vel ipsum sequi fugiat est libero sunt nam eligendi, aperiam itaque asperiores nobis facilis doloremque ullam blanditiis rerum voluptas!'
+    },
+    {
+        id: 1,
+        title: 'attempt calculator',
+        description: 'lorem Suscipit'
+    },
+    {
+        id: 2,
+        title: 'training log',
+        description: 'lorem Suscipit, accusantium iusto vel ipsum sequi fugiat est libero sunt nam eligendi, aperiam itaque asperiores nobis facilis doloremque ullam blanditiis rerum voluptas!'
+    },
+    {
+        id: 3,
+        title: 'unique login',
+        description: 'lorem Suscipit, accusantium iusto vel ipsum sequi fugiat est libero sunt nam eligendi, aperiam itaque asperiores nobis facilis doloremque ullam blanditiis rerum voluptas!'
+    },
+    {
+        id: 4,
+        title: 'gains',
+        description: 'lorem Suscipit, accusantium iusto vel ipsum sequi fugiat est libero sunt nam eligendi, aperiam itaque asperiores nobis facilis doloremque ullam blanditiis rerum voluptas!'
+    },
+    {
+        id: 1,
+        title: 'attempt calculator',
+        description: 'lorem Suscipit'
+    },
+    {
+        id: 2,
+        title: 'training log',
+        description: 'lorem Suscipit, accusantium iusto vel ipsum sequi fugiat est libero sunt nam eligendi, aperiam itaque asperiores nobis facilis doloremque ullam blanditiis rerum voluptas!'
+    },
+    {
+        id: 3,
+        title: 'unique login',
+        description: 'lorem Suscipit, accusantium iusto vel ipsum sequi fugiat est libero sunt nam eligendi, aperiam itaque asperiores nobis facilis doloremque ullam blanditiis rerum voluptas!'
+    },
+    {
+        id: 4,
+        title: 'gains',
+        description: 'lorem Suscipit, accusantium iusto vel ipsum sequi fugiat est libero sunt nam eligendi, aperiam itaque asperiores nobis facilis doloremque ullam blanditiis rerum voluptas!'
+    },
 ])
 
 </script>

@@ -5,7 +5,7 @@ const route = useRoute();
 <template>
     <div class="flex justify-center lg:justify-end ">
         <nav class="flex sm:flex-row lg:flex-col lg:gap-3 gap-3 font-light text-[color:#D4D3D2] ">
-            <span class="flex sm:flex-row lg:flex-col lg:gap-0 gap-3">
+            <span class="flex gap-3 sm:flex-row lg:flex-col lg:gap-0">
                 <NuxtLink to="/projects" class="hover:underline " :class="{
                     'font-bold text-[color:#FBF0DF] grayscale-1': route.path === '/projects',
                     'grayscale': route.path !== '/projects'
@@ -20,10 +20,10 @@ const route = useRoute();
                     'font-bold text-[color:#FBF0DF] grayscale-1': route.path === '/',
                     'grayscale': route.path !== '/'
                 }">
-                    about 👨‍🔧</NuxtLink>
+                    about 👨‍💻‍</NuxtLink>
             </span>
 
-            <span class="flex sm:flex-row lg:flex-col lg:gap-0 gap-3">
+            <span class="flex gap-3 sm:flex-row lg:flex-col lg:gap-0">
                 <a class="hover:underline" href="https://www.github.com/wajeht" target="_blank">github ↗️</a>
                 <a class="hover:underline" href="https://www.linkedin.com/in/kyawsny/" target="_blank">linkedin ↗️</a>
             </span>

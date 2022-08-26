@@ -1,23 +1,27 @@
+<script setup lang="ts">
+const route = useRoute();
+</script>
 <template>
   <div class="lg:flex">
     <!-- sidebar -->
     <aside
-      class="flex flex-col justify-between bg-[color:#0B0A08] text-[color:#FBF0DF] lg:h-screen lg:flex-[35%] p-5 text-end">
+      class="flex flex-col justify-between bg-[color:#0B0A08] text-[color:#D4D3D2] lg:h-screen lg:flex-[35%] p-5 text-end border-b border-b-[color:#252420] lg:border-r  lg:border-r-[color:#252420] ">
 
       <!-- top -->
       <div class="lg:mt-[170px]">
         <div class="flex flex-col gap-5">
           <!-- image -->
           <div class="flex justify-center lg:justify-end ">
-            <img class="w-24 h-24 sm:text-center sm:justify-center sm:content-center rounded-full border-solid border-2
-          border-stone-400" src="../assets/jaw.jpg">
+            <img
+              class="w-24 h-24 border-2 border-solid rounded-full sm:text-center sm:justify-center sm:content-center border-[color:#939290] hover:border-[color:#FBF0DF] hover:cursor-pointer"
+              src="../assets/jaw.jpg">
           </div>
 
           <!-- name and description -->
           <div class="flex justify-center lg:justify-end ">
             <div class="flex flex-col">
 
-              <span class="flex gap-2 justify-end">
+              <span class="flex justify-end gap-2">
                 <!-- emo -->
                 <span class="animate-wave">👋</span>
                 <!-- description name -->
@@ -25,14 +29,14 @@
                   <span class="font-light">
                     hi there, this is
                   </span>
-                  <span class="font-bold">
+                  <span class="font-bold text-[color:#FBF0DF]">
                     Jaw!
                   </span>
                 </span>
               </span>
 
               <!-- description -->
-              <p class="text-white">a competitive powerlifter...</p>
+              <p>a competitive powerlifter...</p>
             </div>
           </div>
 
@@ -43,20 +47,24 @@
       </div>
 
       <!-- side bar copyright -->
-      <div class="hidden lg:block font-light text-xs text-zinc-500">© 2022 jaw.dev. All Rights Reserved.</div>
+      <div class="hidden text-xs font-light lg:block text-zinc-500">© 2022 jaw.dev. All Rights Reserved.</div>
     </aside>
 
     <!-- main -->
     <main
-      class="flex flex-col justify-between gap-3 lg:flex-[65%] bg-[color:#15140E] overflow-y-scroll text-[color:#FBF0DF]  p-5">
+      class="flex flex-col justify-between gap-3 lg:h-screen lg:overflow-scroll  lg:flex-[65%] bg-[color:#15140E] text-[color:#FBF0DF] p-5"
+      :class="{ 'h-[calc(100vh-249px)]': route.path !== '/projects' }">
+
+      <!-- slot -->
       <div class="lg:max-w-[65%] lg:mt-[290px]">
         <slot />
       </div>
 
-      <!-- main bar copyright -->
-      <div class="lg:hidden sm:block text-center font-light text-xs text-zinc-500">© 2022 jaw.dev.
+      <!-- copyright -->
+      <div class="mt-2 text-xs font-light text-center lg:hidden sm:block text-zinc-500">© 2022 jaw.dev.
         All Rights
-        Reserved.</div>
+        Reserved.
+      </div>
     </main>
   </div>
 </template>

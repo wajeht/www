@@ -5,17 +5,17 @@ const route = useRoute();
 
 const pictures = ref<{ url: String, }[]>([
   {
-    url: './blue.jpg'
+    url: 'blue.jpg'
   },
   {
-    url: './jaw.jpg'
+    url: 'jaw.jpg'
   },
   {
-    url: './strength.jpeg'
+    url: 'strength.jpeg'
   }
 ])
 
-const randomProfilePicture = ref('./jaw.jpg');
+const randomProfilePicture = ref('jaw.jpg');
 const currentImageIndex = ref(-1);
 
 function generateRandomPicture(): void {

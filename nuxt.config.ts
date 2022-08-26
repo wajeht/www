@@ -2,9 +2,12 @@ import { defineNuxtConfig } from 'nuxt'
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
+    head: {
+        title: 'jaw.dev'
+    },
     srcDir: './src',
     image: {
-        dir: './assets'
+        dir: './public/images'
     },
     modules: [
         '@nuxtjs/tailwindcss',

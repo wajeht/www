@@ -8,7 +8,9 @@
         "powerlifter",
         "powerlifting",
         "tailwindcss",
-        "wajeht"
+        "vlog",
+        "wajeht",
+        "winfroms"
     ],
     "typescript.tsdk": "node_modules/typescript/lib"
 }

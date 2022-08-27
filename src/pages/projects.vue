@@ -60,7 +60,7 @@ const projects = ref([
         images: [
             {
                 url: '/images/gains.png',
-                backgroundColor: 'brown'
+                backgroundColor: '#A7A9A7'
             }
         ]
         ,
@@ -135,7 +135,7 @@ const projects = ref([
         images: [
             {
                 url: '/images/jaw-dev.png',
-                backgroundColor: 'yellow',
+                backgroundColor: '#29261C',
             }
         ],
         links: [
@@ -267,9 +267,8 @@ const projects = ref([
         ],
         images: [
             {
-
                 url: '/images/training-log-v2.png',
-                backgroundColor: 'green'
+                backgroundColor: '#43464D'
             }
         ],
         links: [
@@ -291,7 +290,7 @@ const projects = ref([
         images: [
             {
                 url: '/images/check-in-systems.png',
-                backgroundColor: 'blue'
+                backgroundColor: '#2F4C66'
             }
         ],
         technologies: [
@@ -335,7 +334,7 @@ const projects = ref([
         images: [
             {
                 url: '/images/jaw-strength.png',
-                backgroundColor: 'blue'
+                backgroundColor: '#52648A'
             }
         ],
         technologies: [
@@ -387,8 +386,8 @@ const projects = ref([
         subtitle: '(web)',
         descriptions: ["Build full-stack web application to log training videos with respect to training split. This app has features such as users being able to post their training videos and comments. I intend to use it personally and also for my future clients."],
         images: [{
-            url: '/images/training_vlog.jpg',
-            backgroundColor: 'red'
+            url: '/images/training-log-v1.png',
+            backgroundColor: '#507C6B'
         }
         ],
         technologies: [
@@ -457,7 +456,7 @@ const projects = ref([
         images: [
             {
                 url: '/images/unique-login-web.png',
-                backgroundColor: 'red',
+                backgroundColor: '#1A5297',
             }
         ],
         technologies: [
@@ -531,7 +530,7 @@ const projects = ref([
         images: [
             {
                 url: '/images/shift_scheduler.jpg',
-                backgroundColor: 'red'
+                backgroundColor: '#42C4BA'
             }
         ],
         technologies: [
@@ -572,7 +571,7 @@ const projects = ref([
             {
 
                 url: '/images/unique_login.jpg',
-                backgroundColor: "orange"
+                backgroundColor: "#DF3E07"
             }
         ],
         technologies: [
@@ -607,7 +606,7 @@ const projects = ref([
         images: [
             {
                 url: '/images/attempt_calculator.jpg',
-                backgroundColor: 'red'
+                backgroundColor: '#E8032E'
             }
         ],
         technologies: [
@@ -664,7 +663,7 @@ const projects = ref([
         images: [
             {
                 url: '/images/care_amarillo.jpg',
-                backgroundColor: 'green'
+                backgroundColor: '#F0F0F0'
             }
         ],
         technologies: [

@@ -40,11 +40,11 @@ const hydrate = ref(false);
 
             <!-- image -->
             <img v-for="m, i in images" :key="i" :src="m"
-                class="border-2 border-[color:#3C3C3C] object-cover grayscale rounded-sm max-h-[15rem]"
+                class="border-2 border-[color:#3C3C3C] bg-[color:#1B1A12] object-contain grayscale rounded-sm max-h-[15rem] mb-1"
                 :class="{ 'grayscale-0': hydrate === true }">
 
             <!-- badges -->
-            <span v-if="technologies?.length" class="flex flex-wrap gap-1 grayscale"
+            <span v-if="technologies?.length" class="flex flex-wrap gap-1 mb-2 grayscale"
                 :class="{ 'grayscale-0': hydrate === true }">
                 <span v-for="t, i in technologies" :key="i" :class="t.backgroundColor, t.textColor"
                     class="px-1 py-0.5 text-xs rounded-xl  flex-none">

@@ -77,7 +77,7 @@ const projects = ref<Card[]>([
                 "textColor": 'text-white'
             },
         ],
-        images: ['/images/gains.jpg'],
+        images: ['/images/gains.png'],
         links: [
             {
                 'name': 'demo',
@@ -92,8 +92,8 @@ const projects = ref<Card[]>([
 
     {
         title: 'jaw.dev',
-        subtitle: '(web)',
-        descriptions: ['lorem Suscipit, accusantium iusto vel ipsum sequi fugiat est libero sunt nam eligendi, aperiam itaque asperiores nobis facilis doloremque ullam blanditiis rerum voluptas!'],
+        subtitle: '(web, serverless)',
+        descriptions: ['A serverless web application to display list of projects.'],
         technologies: [
             {
                 "name": "▶️ github action (ci/cd)",
@@ -146,11 +146,11 @@ const projects = ref<Card[]>([
                 "textColor": 'text-white'
             },
         ],
-        images: ['/images/gains.jpg'],
+        images: ['/images/jaw-dev.png'],
         links: [
             {
                 'name': 'demo',
-                'url': 'https://jaw.dev'
+                'url': 'https://jaw-dev-jaw.vercel.app/'
             },
             {
                 'name': 'github',
@@ -158,11 +158,17 @@ const projects = ref<Card[]>([
             }
         ]
     },
+
     {
         title: 'tvl-bucket',
-        subtitle: '(rest api)',
-        descriptions: ["video upload api"],
+        subtitle: '(rest api, microservice)',
+        descriptions: ["Video upload api"],
         technologies: [
+            {
+                "name": "ffmpeg",
+                backgroundColor: 'bg-green-700',
+                "textColor": 'text-white'
+            },
             {
                 "name": "🐳 docker",
                 backgroundColor: 'bg-sky-900',
@@ -215,7 +221,7 @@ const projects = ref<Card[]>([
     {
         title: 'training log v2',
         subtitle: '(web)',
-        descriptions: ["Currently in the process of building second iteration of the training vlog app I've built few months ago."],
+        descriptions: ["Second iteration of the training video log web app I've built few months ago. This project introduced modern client side javascript framework on some parts of the page where interactivity plays a huge role."],
         technologies: [
             {
                 "name": "🐳 docker",
@@ -268,7 +274,7 @@ const projects = ref<Card[]>([
                 "textColor": 'text-white'
             },
         ],
-        images: ['/images/training-log.jpg'],
+        images: ['/images/training-log-v2.png'],
         links: [
             {
                 'name': 'demo',
@@ -284,7 +290,7 @@ const projects = ref<Card[]>([
         title: 'check-in systems',
         subtitle: '(web)',
         descriptions: ["Built a check-in systems for amarillo college computer lab to track student and guest to track each visit during covid period!"],
-        images: ['/images/check-in-systems.jpg'],
+        images: ['/images/check-in-systems.png'],
         technologies: [
             {
                 "name": "🦈 mysql",
@@ -322,7 +328,7 @@ const projects = ref<Card[]>([
         title: 'jawstrength',
         subtitle: '(web)',
         descriptions: ["Built a full-stack Nodejs web application for my coaching services. I have implemented E-commerce style where user able to buy specific services. I wrote the whole style from scratch; did not use any CSS library!"],
-        images: ['/images/jawstrength.jpg'],
+        images: ['/images/jaw-strength.png'],
         technologies: [
             {
                 "name": "🐘 postgres",
@@ -433,7 +439,7 @@ const projects = ref<Card[]>([
         title: 'unique login',
         subtitle: '(web, rest api)',
         descriptions: ["Built a simply over engineered full-stack web application that spits out unique login credentials. I was inspired by the window's version that I've developed last year; I wanted to abe to use it anywhere I go. Its font-end is running as NGINX as static file and Nodejs as an API end point."],
-        images: ['/images/unique_login_app.jpg'],
+        images: ['/images/unique-login-web.png'],
         technologies: [
             {
                 "name": "🐳 docker",
@@ -645,7 +651,7 @@ const projects = ref<Card[]>([
 </script>
 <template>
     <template class="flex flex-col gap-5">
-        <Card v-for="p, i in projects" :key="p.id" :id="p.id" :title="p.title" :subtitle="p.subtitle"
+        <Card v-once v-for="p, i in projects" :key="i" :title="p.title" :subtitle="p.subtitle"
             :descriptions="p.descriptions" :technologies="p.technologies" :images="p.images" :links="p.links" />
     </template>
 </template>

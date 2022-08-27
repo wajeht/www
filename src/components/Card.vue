@@ -13,6 +13,7 @@ type Link = {
 
 const props = defineProps<{
     id?: number;
+    subtitle?: string;
     title?: string;
     images?: string[];
     descriptions?: string[];
@@ -33,7 +34,10 @@ const hydrate = ref(false);
         <span :class="{ 'flex flex-col gap-1': descriptions?.length && title?.length && technologies?.length }">
 
             <!-- title -->
-            <h1 class="text-2xl text-[color:#FBF0DF]">{{ title }}</h1>
+            <span class="flex flex-wrap items-center gap-2">
+                <h1 class="text-2xl text-[color:#FBF0DF]">{{ title }}</h1>
+                <span class="font-light text-[color:#D4D3D2]">{{ subtitle }}</span>
+            </span>
 
             <!-- image -->
             <img v-for="m, i in images" :key="i" :src="m"

@@ -650,8 +650,9 @@ const projects = ref<Card[]>([
 
 </script>
 <template>
-    <template class="flex flex-col gap-5">
-        <Card v-once v-for="p, i in projects" :key="i" :title="p.title" :subtitle="p.subtitle"
-            :descriptions="p.descriptions" :technologies="p.technologies" :images="p.images" :links="p.links" />
-    </template>
+    <div class="flex flex-col sm:gap-4 columns-2">
+        <Card class="lg:w-full lg:h-full lg:mb-4 lg:break-inside-avoid-column" v-once v-for="p, i in projects" :key="i"
+            :title="p.title" :subtitle="p.subtitle" :descriptions="p.descriptions" :technologies="p.technologies"
+            :images="p.images" :links="p.links" />
+    </div>
 </template>

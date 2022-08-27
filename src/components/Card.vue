@@ -12,7 +12,6 @@ type Link = {
 }
 
 const props = defineProps<{
-    id?: number;
     subtitle?: string;
     title?: string;
     images?: string[];

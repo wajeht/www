@@ -12,7 +12,6 @@ type Link = {
 }
 
 interface Card {
-    id?: number,
     title?: string,
     subtitle?: string,
     images?: string[],
@@ -23,7 +22,6 @@ interface Card {
 
 const projects = ref<Card[]>([
     {
-        id: 0,
         title: 'gains',
         subtitle: '(pwa, rest api)',
         descriptions: ['lorem Suscipit, accusantium iusto vel ipsum sequi fugiat est libero sunt nam eligendi, aperiam itaque asperiores nobis facilis doloremque ullam blanditiis rerum voluptas!'],
@@ -91,8 +89,76 @@ const projects = ref<Card[]>([
             }
         ]
     },
+
     {
-        id: 1,
+        title: 'jaw.dev',
+        subtitle: '(web)',
+        descriptions: ['lorem Suscipit, accusantium iusto vel ipsum sequi fugiat est libero sunt nam eligendi, aperiam itaque asperiores nobis facilis doloremque ullam blanditiis rerum voluptas!'],
+        technologies: [
+            {
+                "name": "▶️ github action (ci/cd)",
+                backgroundColor: 'bg-sky-600',
+                "textColor": 'text-white'
+            },
+            {
+                "name": "🐳 docker",
+                backgroundColor: 'bg-sky-900',
+                "textColor": 'text-white'
+            },
+            {
+                "name": "V Vue",
+                backgroundColor: 'bg-green-900',
+                "textColor": 'text-white'
+            },
+            {
+                "name": "Nuxt",
+                backgroundColor: 'bg-green-600',
+                "textColor": 'text-white'
+            },
+            {
+                "name": "💨 Tailwind",
+                backgroundColor: 'bg-sky-500',
+                "textColor": 'text-white'
+            },
+            {
+                "name": "💎 node",
+                backgroundColor: 'bg-green-900',
+                "textColor": 'text-white'
+            },
+            {
+                "name": "typescript",
+                backgroundColor: 'bg-sky-600',
+                "textColor": 'text-white'
+            },
+            {
+                "name": "🐧 linux (debian)",
+                backgroundColor: 'bg-gray-500',
+                "textColor": 'text-white'
+            },
+            {
+                "name": "N nginx",
+                backgroundColor: 'bg-green-600',
+                "textColor": 'text-white'
+            },
+            {
+                "name": "🔼 Vercel",
+                backgroundColor: 'bg-black',
+                "textColor": 'text-white'
+            },
+        ],
+        images: ['/images/gains.jpg'],
+        links: [
+            {
+                'name': 'demo',
+                'url': 'https://jaw.dev'
+            },
+            {
+                'name': 'github',
+                'url': 'https://www.github.com/wajeht/jaw-dev'
+            }
+        ]
+    },
+    {
         title: 'tvl-bucket',
         subtitle: '(rest api)',
         descriptions: ["video upload api"],
@@ -147,7 +213,6 @@ const projects = ref<Card[]>([
 
     },
     {
-        id: 2,
         title: 'training log v2',
         subtitle: '(web)',
         descriptions: ["Currently in the process of building second iteration of the training vlog app I've built few months ago."],
@@ -216,7 +281,6 @@ const projects = ref<Card[]>([
         ]
     },
     {
-        id: 3,
         title: 'check-in systems',
         subtitle: '(web)',
         descriptions: ["Built a check-in systems for amarillo college computer lab to track student and guest to track each visit during covid period!"],
@@ -255,7 +319,6 @@ const projects = ref<Card[]>([
         ]
     },
     {
-        id: 4,
         title: 'jawstrength',
         subtitle: '(web)',
         descriptions: ["Built a full-stack Nodejs web application for my coaching services. I have implemented E-commerce style where user able to buy specific services. I wrote the whole style from scratch; did not use any CSS library!"],
@@ -304,7 +367,6 @@ const projects = ref<Card[]>([
         ]
     },
     {
-        id: 5,
         title: 'training log v1',
         subtitle: '(web)',
         descriptions: ["Build full-stack web application to log training videos with respect to training split. This app has features such as users being able to post their training videos and comments. I intend to use it personally and also for my future clients."],
@@ -368,7 +430,6 @@ const projects = ref<Card[]>([
         ]
     },
     {
-        id: 6,
         title: 'unique login',
         subtitle: '(web, rest api)',
         descriptions: ["Built a simply over engineered full-stack web application that spits out unique login credentials. I was inspired by the window's version that I've developed last year; I wanted to abe to use it anywhere I go. Its font-end is running as NGINX as static file and Nodejs as an API end point."],
@@ -437,7 +498,6 @@ const projects = ref<Card[]>([
         ]
     },
     {
-        id: 7,
         title: 'shift scheduler',
         subtitle: '(electron)',
         descriptions: ["Built this cross platform desktop application for the local restaurant called 'Sushi House', while I was working there as sushi chef. This application saved numerous of time for the owner to create shifts for server ever single week within a click of a button!"],
@@ -472,7 +532,6 @@ const projects = ref<Card[]>([
         ]
     },
     {
-        id: 8,
         title: 'unique login',
         subtitle: '(windows, c#)',
         descriptions: ["Built this window's form desktop application for my brother who likes to generate random passwords and unique usernames for his gaming credentials. It uses combination of animal names, verbs, adjectives and names for username and random alphabets, numeric and special characters for password."],
@@ -502,7 +561,6 @@ const projects = ref<Card[]>([
         ]
     },
     {
-        id: 9,
         title: 'powerlifting attempt calculator',
         subtitle: '(web, ios, android)',
         descriptions: ["A free application that is written in native technology for Web, iOS, and Android. I've built this in needs of free resource for strength athletes that could not afford coaching service. The app is available to to download on both iOS and Android AppStore."],
@@ -554,7 +612,6 @@ const projects = ref<Card[]>([
         ]
     },
     {
-        id: 10,
         title: 'care amarillo',
         subtitle: '(windows, c#)',
         descriptions: ["A window desktop application that I've contributed which was intend to built for city of Amarillo, TX as a classroom project. The CareAmarillo System enables system users to find information on registered human services as well as emergency shelters."],

@@ -1,9 +1,12 @@
 <script setup lang="ts">
+import { ref } from 'vue';
+
 const descriptions = ref([
     "kyawsny at gmail dot com"
 ]);
 
 </script>
+
 <template>
-    <Card class="italic" :descriptions="descriptions" />
+    <Card :descriptions="descriptions" />
 </template>

@@ -11,10 +11,15 @@ type Link = {
     url: string;
 }
 
+type Image = {
+    url: string;
+    backgroundColor: string;
+}
+
 const props = defineProps<{
     subtitle?: string;
     title?: string;
-    images?: string[];
+    images?: Image[];
     descriptions?: string[];
     technologies?: Technology[];
     links?: Link[];
@@ -39,18 +44,18 @@ const hydrate = ref(false);
             </span>
 
             <!-- image -->
-            <img v-for="m, i in images" :key="i" :src="m"
-                class="border-2 border-[color:#3C3C3C] bg-[color:#1B1A12] object-contain grayscale rounded-sm max-h-[15rem] mb-1"
-                :class="{ 'grayscale-0': hydrate === true }">
+            <img v-for="m, i in images" :key="i" :src="m.url"
+                class="border-2 border-[color:#3C3C3C] bg-[color:#1B1A12] grayscale  object-contain lg:object-center rounded-sm max-h-[15rem] mb-1"
+                :style="{ 'background-color': m.backgroundColor }" :class="{ 'grayscale-0': hydrate === true }">
 
             <!-- badges -->
-            <span v-if="technologies?.length" class="flex flex-wrap gap-1 mb-2 grayscale"
+            <small v-if="technologies?.length" class="flex flex-wrap gap-1 mb-2 grayscale"
                 :class="{ 'grayscale-0': hydrate === true }">
-                <span v-for="t, i in technologies" :key="i" :class="t.backgroundColor, t.textColor"
+                <small v-for="t, i in technologies" :key="i" :class="t.backgroundColor, t.textColor"
                     class="px-1 py-0.5 text-xs rounded-xl  flex-none">
-                    <span class="px-1">{{ t.name }}</span>
-                </span>
-            </span>
+                    <small class="px-0.5">{{ t.name }}</small>
+                </small>
+            </small>
 
             <!-- description -->
             <span v-if="descriptions?.length" class="flex flex-col gap-2">

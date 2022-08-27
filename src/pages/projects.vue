@@ -1,26 +1,6 @@
 <script setup lang="ts">
 
-type Technology = {
-    name: string;
-    textColor: string;
-    backgroundColor: string;
-}
-
-type Link = {
-    name: string;
-    url: string;
-}
-
-interface Card {
-    title?: string,
-    subtitle?: string,
-    images?: string[],
-    descriptions?: string[],
-    technologies?: Technology[],
-    links?: Link[],
-}
-
-const projects = ref<Card[]>([
+const projects = ref([
     {
         title: 'gains',
         subtitle: '(pwa, rest api)',
@@ -77,7 +57,13 @@ const projects = ref<Card[]>([
                 "textColor": 'text-white'
             },
         ],
-        images: ['/images/gains.png'],
+        images: [
+            {
+                url: '/images/gains.png',
+                backgroundColor: 'brown'
+            }
+        ]
+        ,
         links: [
             {
                 'name': 'demo',
@@ -146,7 +132,12 @@ const projects = ref<Card[]>([
                 "textColor": 'text-white'
             },
         ],
-        images: ['/images/jaw-dev.png'],
+        images: [
+            {
+                url: '/images/jaw-dev.png',
+                backgroundColor: 'yellow',
+            }
+        ],
         links: [
             {
                 'name': 'demo',
@@ -216,8 +207,8 @@ const projects = ref<Card[]>([
                 'url': 'https://github.com/wajeht/tvl-bucket'
             }
         ]
-
     },
+
     {
         title: 'training log v2',
         subtitle: '(web)',
@@ -274,7 +265,13 @@ const projects = ref<Card[]>([
                 "textColor": 'text-white'
             },
         ],
-        images: ['/images/training-log-v2.png'],
+        images: [
+            {
+
+                url: '/images/training-log-v2.png',
+                backgroundColor: 'green'
+            }
+        ],
         links: [
             {
                 'name': 'demo',
@@ -286,11 +283,17 @@ const projects = ref<Card[]>([
             }
         ]
     },
+
     {
         title: 'check-in systems',
         subtitle: '(web)',
         descriptions: ["Built a check-in systems for amarillo college computer lab to track student and guest to track each visit during covid period!"],
-        images: ['/images/check-in-systems.png'],
+        images: [
+            {
+                url: '/images/check-in-systems.png',
+                backgroundColor: 'blue'
+            }
+        ],
         technologies: [
             {
                 "name": "🦈 mysql",
@@ -324,11 +327,17 @@ const projects = ref<Card[]>([
             }
         ]
     },
+
     {
         title: 'jawstrength',
         subtitle: '(web)',
         descriptions: ["Built a full-stack Nodejs web application for my coaching services. I have implemented E-commerce style where user able to buy specific services. I wrote the whole style from scratch; did not use any CSS library!"],
-        images: ['/images/jaw-strength.png'],
+        images: [
+            {
+                url: '/images/jaw-strength.png',
+                backgroundColor: 'blue'
+            }
+        ],
         technologies: [
             {
                 "name": "🐘 postgres",
@@ -372,11 +381,16 @@ const projects = ref<Card[]>([
             }
         ]
     },
+
     {
         title: 'training log v1',
         subtitle: '(web)',
         descriptions: ["Build full-stack web application to log training videos with respect to training split. This app has features such as users being able to post their training videos and comments. I intend to use it personally and also for my future clients."],
-        images: ['/images/training_vlog.jpg'],
+        images: [{
+            url: '/images/training_vlog.jpg',
+            backgroundColor: 'red'
+        }
+        ],
         technologies: [
             {
                 "name": "🐳 docker",
@@ -435,11 +449,17 @@ const projects = ref<Card[]>([
             }
         ]
     },
+
     {
         title: 'unique login',
         subtitle: '(web, rest api)',
         descriptions: ["Built a simply over engineered full-stack web application that spits out unique login credentials. I was inspired by the window's version that I've developed last year; I wanted to abe to use it anywhere I go. Its font-end is running as NGINX as static file and Nodejs as an API end point."],
-        images: ['/images/unique-login-web.png'],
+        images: [
+            {
+                url: '/images/unique-login-web.png',
+                backgroundColor: 'red',
+            }
+        ],
         technologies: [
             {
                 "name": "🐳 docker",
@@ -503,11 +523,17 @@ const projects = ref<Card[]>([
             }
         ]
     },
+
     {
         title: 'shift scheduler',
         subtitle: '(electron)',
         descriptions: ["Built this cross platform desktop application for the local restaurant called 'Sushi House', while I was working there as sushi chef. This application saved numerous of time for the owner to create shifts for server ever single week within a click of a button!"],
-        images: ['/images/shift_scheduler.jpg'],
+        images: [
+            {
+                url: '/images/shift_scheduler.jpg',
+                backgroundColor: 'red'
+            }
+        ],
         technologies: [
             {
                 "name": "Electron",
@@ -537,11 +563,18 @@ const projects = ref<Card[]>([
             }
         ]
     },
+
     {
         title: 'unique login',
         subtitle: '(windows, c#)',
         descriptions: ["Built this window's form desktop application for my brother who likes to generate random passwords and unique usernames for his gaming credentials. It uses combination of animal names, verbs, adjectives and names for username and random alphabets, numeric and special characters for password."],
-        images: ['/images/unique_login.jpg'],
+        images: [
+            {
+
+                url: '/images/unique_login.jpg',
+                backgroundColor: "orange"
+            }
+        ],
         technologies: [
             {
                 "name": "xaml",
@@ -566,11 +599,17 @@ const projects = ref<Card[]>([
             }
         ]
     },
+
     {
         title: 'powerlifting attempt calculator',
         subtitle: '(web, ios, android)',
         descriptions: ["A free application that is written in native technology for Web, iOS, and Android. I've built this in needs of free resource for strength athletes that could not afford coaching service. The app is available to to download on both iOS and Android AppStore."],
-        images: ['/images/attempt_calculator.jpg'],
+        images: [
+            {
+                url: '/images/attempt_calculator.jpg',
+                backgroundColor: 'red'
+            }
+        ],
         technologies: [
             {
                 "name": "java",
@@ -617,11 +656,17 @@ const projects = ref<Card[]>([
             }
         ]
     },
+
     {
         title: 'care amarillo',
         subtitle: '(windows, c#)',
         descriptions: ["A window desktop application that I've contributed which was intend to built for city of Amarillo, TX as a classroom project. The CareAmarillo System enables system users to find information on registered human services as well as emergency shelters."],
-        images: ['/images/care_amarillo.jpg'],
+        images: [
+            {
+                url: '/images/care_amarillo.jpg',
+                backgroundColor: 'green'
+            }
+        ],
         technologies: [
             {
                 "name": "🦈 mysql",
@@ -650,9 +695,9 @@ const projects = ref<Card[]>([
 
 </script>
 <template>
-    <div class="flex flex-col sm:gap-4 columns-2">
-        <Card class="lg:w-full lg:h-full lg:mb-4 lg:break-inside-avoid-column" v-once v-for="p, i in projects" :key="i"
-            :title="p.title" :subtitle="p.subtitle" :descriptions="p.descriptions" :technologies="p.technologies"
-            :images="p.images" :links="p.links" />
+    <div class="lg:columns-2 sm:columns-1">
+        <Card :class="{ 'mb-4': i != projects?.length - 1 }" class="lg:h-full lg:w-full lg:break-inside-avoid-column"
+            v-once v-for="p, i in projects" :key="i" :title="p.title" :subtitle="p.subtitle"
+            :descriptions="p.descriptions" :technologies="p.technologies" :images="p.images" :links="p.links" />
     </div>
 </template>

@@ -25,9 +25,9 @@ const showModal = ref(false);
         <Teleport to="body">
             <div v-if="showModal" @click="$emit('open')" class="relative z-10" role="dialog">
                 <!-- background -->
-                <div class="fixed inset-0 z-10 flex items-center justify-center p-4 bg-black bg-opacity-50 ">
+                <div class="fixed inset-0 z-10 flex items-center justify-center p-4 bg-black bg-opacity-75">
                     <!-- content -->
-                    <div class="flex flex-col gap-2 px-4 pt-5 pb-4 bg-[color:#252420] rounded-sm">
+                    <div class="flex max-w-3xl flex-col gap-2 px-4 pt-5 pb-4 bg-[color:#252420] rounded-sm">
 
                         <!-- title -->
                         <div class="flex justify-between ">

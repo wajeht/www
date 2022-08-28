@@ -8,7 +8,7 @@ const arr = ref<string[]>([
     "My natural ambitions are to solve problems. So far, I have demonstrated histories of working with many businesses to generate more revenue, improve internal business operations, and increase pounds toward athletes' powerlifting total. Currently, I have also possessed a skill that can solve business problems with software solutions. Now, let me solve your problems and help your company grow!"
 ]);
 
-const modal = ref({
+const video = ref({
     url: '/videos/deadlift.mp4',
     label: "Don't click this!",
     title: "Sumo deadlift: 655 lbs.",
@@ -17,5 +17,5 @@ const modal = ref({
 </script>
 
 <template>
-    <Card :descriptions="arr" :VideoModal="modal" />
+    <Card :descriptions="arr" :video="video" />
 </template>

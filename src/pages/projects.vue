@@ -528,6 +528,11 @@ const projects = ref([
         title: 'shift scheduler',
         subtitle: '(electron)',
         descriptions: ["Built this cross platform desktop application for the local restaurant called 'Sushi House', while I was working there as sushi chef. This application saved numerous of time for the owner to create shifts for server ever single week within a click of a button!"],
+        video: {
+            url: '/videos/shift-scheduler.mp4',
+            title: 'Shift scheduler demonstration',
+            label: 'video preview',
+        },
         images: [
             {
                 url: '/images/shift_scheduler.jpg',
@@ -568,6 +573,11 @@ const projects = ref([
         title: 'unique login',
         subtitle: '(windows, c#)',
         descriptions: ["Built this window's form desktop application for my brother who likes to generate random passwords and unique usernames for his gaming credentials. It uses combination of animal names, verbs, adjectives and names for username and random alphabets, numeric and special characters for password."],
+        video: {
+            url: '/videos/unique-login.mp4',
+            title: 'Unique login demonstration',
+            label: 'video preview',
+        },
         images: [
             {
 
@@ -695,9 +705,10 @@ const projects = ref([
 
 </script>
 <template>
-    <div class="columns-1 xl:columns-2">
+    <div class="columns-1 2xl:columns-2">
         <Card :class="{ 'mb-4': i != projects?.length - 1 }" class="lg:h-full lg:w-full lg:break-inside-avoid-column"
             v-once v-for="p, i in projects" :key="i" :title="p.title" :subtitle="p.subtitle" :wip="p.wip"
-            :descriptions="p.descriptions" :technologies="p.technologies" :images="p.images" :links="p.links" />
+            :video="p.video" :descriptions="p.descriptions" :technologies="p.technologies" :images="p.images"
+            :links="p.links" />
     </div>
 </template>

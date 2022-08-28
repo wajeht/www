@@ -16,7 +16,7 @@ type Image = {
     backgroundColor: string;
 }
 
-type VideoModal = {
+type video = {
     title: string;
     label: string;
     url: string;
@@ -27,7 +27,7 @@ const props = defineProps<{
     title?: string;
     wip?: boolean;
     images?: Image[];
-    VideoModal?: VideoModal;
+    video?: video;
     descriptions?: string[];
     technologies?: Technology[];
     links?: Link[];
@@ -83,7 +83,7 @@ const hydrate = ref(false);
         </div>
 
         <!-- buttons -->
-        <div v-if="links?.length || VideoModal != null || VideoModal != undefined" class="flex flex-wrap gap-2">
+        <div v-if="links?.length || video != null || video != undefined" class="flex flex-wrap gap-2">
 
             <!-- demo/github -->
             <a v-for="l, i in links" :key="i" :href="l.url" target="_blank"
@@ -92,9 +92,8 @@ const hydrate = ref(false);
                 }}</a>
 
             <!-- modal -->
-            <div v-if="VideoModal">
-                <VideoModal v-if="VideoModal" :title="VideoModal.title" :url="VideoModal.url"
-                    :label="VideoModal.label" />
+            <div v-if="video">
+                <VideoModal v-if="video" :title="video.title" :url="video.url" :label="video.label" />
             </div>
         </div>
     </article>

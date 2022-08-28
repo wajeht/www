@@ -9,7 +9,7 @@ const arr = ref<string[]>([
 ]);
 
 const video = ref({
-    url: '/assets/videos/deadlift.mp4',
+    url: '/videos/deadlift.mp4',
     label: "Don't click this!",
     title: "Sumo deadlift: 655 lbs.",
 })

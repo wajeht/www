@@ -4,6 +4,7 @@ const projects = ref([
     {
         title: 'gains',
         subtitle: '(pwa, rest api)',
+        wip: true,
         descriptions: ['lorem Suscipit, accusantium iusto vel ipsum sequi fugiat est libero sunt nam eligendi, aperiam itaque asperiores nobis facilis doloremque ullam blanditiis rerum voluptas!'],
         technologies: [
             {
@@ -696,7 +697,7 @@ const projects = ref([
 <template>
     <div class="lg:columns-2 sm:columns-1">
         <Card :class="{ 'mb-4': i != projects?.length - 1 }" class="lg:h-full lg:w-full lg:break-inside-avoid-column"
-            v-once v-for="p, i in projects" :key="i" :title="p.title" :subtitle="p.subtitle"
+            v-once v-for="p, i in projects" :key="i" :title="p.title" :subtitle="p.subtitle" :wip="p.wip"
             :descriptions="p.descriptions" :technologies="p.technologies" :images="p.images" :links="p.links" />
     </div>
 </template>

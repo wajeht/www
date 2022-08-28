@@ -25,6 +25,7 @@ type VideoModal = {
 const props = defineProps<{
     subtitle?: string;
     title?: string;
+    wip?: boolean;
     images?: Image[];
     VideoModal?: VideoModal;
     descriptions?: string[];
@@ -45,9 +46,20 @@ const hydrate = ref(false);
         <div :class="{ 'flex flex-col gap-1': descriptions?.length && title?.length && technologies?.length }">
 
             <!-- title -->
-            <span class="flex flex-wrap items-center gap-2">
-                <h1 class="text-2xl text-[color:#FBF0DF]">{{ title }}</h1>
-                <span class="font-light text-[color:#D4D3D2]">{{ subtitle }}</span>
+            <span class="flex items-center justify-between sm:flex-wrap">
+
+                <!-- title -->
+                <span class="flex flex-wrap items-center gap-2">
+                    <h1 class="text-2xl text-[color:#FBF0DF]">{{ title }}</h1>
+                    <span class="font-light text-[color:#D4D3D2]">{{ subtitle }}</span>
+                </span>
+
+                <!-- wip -->
+                <small v-if="wip"
+                    class="font-light text-[color:#252420] hover:text-[color:#15140E] px-2 rounded-md grayscale italic bg-[color:#F89B4B]"
+                    :class="{ 'grayscale-0': hydrate }">work
+                    in
+                    progress</small>
             </span>
 
             <!-- image -->

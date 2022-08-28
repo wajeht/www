@@ -663,6 +663,14 @@ const projects = ref([
             {
                 'name': 'github (web)',
                 'url': 'https://github.com/wajeht/powerlifting-attempt-selection-calculator-web'
+            },
+            {
+                'name': 'download (google play)',
+                'url': 'https://play.google.com/store/apps/details?id=com.jawstrength.powerliftingattemptselectioncalculator'
+            },
+            {
+                'name': 'download (app store)',
+                'url': 'https://apps.apple.com/us/app/powerlifting-attempt-calculatr/id1540891589'
             }
         ]
     },

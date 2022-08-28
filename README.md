@@ -1,42 +1,5 @@
-# Nuxt 3 Minimal Starter
+[<img width="270" height="535" src="https://user-images.githubusercontent.com/58354193/183277639-9f9f3ee6-f62e-416c-895b-2a65d97291ed.png" />](https://github.com/allkindsofgains/gains/tree/main/.gains)
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+# 👨‍💻 jaw.dev 
+personal web space
 
-## Setup
-
-Make sure to install the dependencies:
-
-```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install --shamefully-hoist
-```
-
-## Development Server
-
-Start the development server on http://localhost:3000
-
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.

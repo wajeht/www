@@ -16,10 +16,17 @@ type Image = {
     backgroundColor: string;
 }
 
+type VideoModal = {
+    title: string;
+    label: string;
+    url: string;
+}
+
 const props = defineProps<{
     subtitle?: string;
     title?: string;
     images?: Image[];
+    VideoModal?: VideoModal;
     descriptions?: string[];
     technologies?: Technology[];
     links?: Link[];
@@ -35,7 +42,7 @@ const hydrate = ref(false);
         class=" flex flex-col gap-3 bg-[color:#252420] p-5 rounded-sm hover:bg-[color:#2A2924]">
 
         <!-- title and description -->
-        <span :class="{ 'flex flex-col gap-1': descriptions?.length && title?.length && technologies?.length }">
+        <div :class="{ 'flex flex-col gap-1': descriptions?.length && title?.length && technologies?.length }">
 
             <!-- title -->
             <span class="flex flex-wrap items-center gap-2">
@@ -61,14 +68,22 @@ const hydrate = ref(false);
             <span v-if="descriptions?.length" class="flex flex-col gap-2">
                 <p v-for="d, i in descriptions" :key="i" class="text-[color:#D4D3D2] font-light">{{ d }}</p>
             </span>
-        </span>
+        </div>
 
         <!-- buttons -->
-        <span v-if="links?.length" class="flex flex-wrap gap-2">
+        <div v-if="links?.length || VideoModal != null || VideoModal != undefined" class="flex flex-wrap gap-2">
+
+            <!-- demo/github -->
             <a v-for="l, i in links" :key="i" :href="l.url" target="_blank"
                 class="py-1 px-4 rounded-sm font-light hover:outline  hover:outline-[color:#37362F] hover:bg-[color:#0B0A08] bg-[color:#15140E] text-[color:#D4D3D2] hover:text-[color:#FBF0DF]">{{
                         l.name
                 }}</a>
-        </span>
+
+            <!-- modal -->
+            <div v-if="VideoModal">
+                <VideoModal v-if="VideoModal" :title="VideoModal.title" :url="VideoModal.url"
+                    :label="VideoModal.label" />
+            </div>
+        </div>
     </article>
 </template>

@@ -2,8 +2,13 @@
 import { ref } from 'vue';
 
 const route = useRoute();
+const router = useRouter();
 
-const pictures = ref<{ url: String, }[]>([
+type Url = {
+  url: string;
+}
+
+const pictures = ref<Url[]>([
   {
     url: '/images/blue.jpg'
   },
@@ -16,12 +21,14 @@ const pictures = ref<{ url: String, }[]>([
 ])
 
 const randomProfilePicture = ref('/images/jaw.jpg');
+
 const currentImageIndex = ref(-1);
 
 function generateRandomPicture(): void {
   if (currentImageIndex.value === 2) currentImageIndex.value = -1;
   currentImageIndex.value++;
   randomProfilePicture.value = pictures.value[currentImageIndex.value].url.toString();
+  router.push('/');
 }
 
 </script>

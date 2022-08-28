@@ -695,7 +695,7 @@ const projects = ref([
 
 </script>
 <template>
-    <div class="lg:columns-2 sm:columns-1">
+    <div class="columns-1 xl:columns-2">
         <Card :class="{ 'mb-4': i != projects?.length - 1 }" class="lg:h-full lg:w-full lg:break-inside-avoid-column"
             v-once v-for="p, i in projects" :key="i" :title="p.title" :subtitle="p.subtitle" :wip="p.wip"
             :descriptions="p.descriptions" :technologies="p.technologies" :images="p.images" :links="p.links" />

@@ -4,7 +4,7 @@ const descriptions = ref([
 ]);
 
 const video = ref({
-    url: '/videos/squat.mp4',
+    url: '/assets/videos/squat.mp4',
     label: 'Play video',
     title: 'Squat video'
 })

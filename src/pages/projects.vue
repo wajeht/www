@@ -60,7 +60,7 @@ const projects = ref([
         ],
         images: [
             {
-                url: '/images/gains.png',
+                url: '/assets/images/gains.png',
                 backgroundColor: '#A7A9A7'
             }
         ]
@@ -135,7 +135,7 @@ const projects = ref([
         ],
         images: [
             {
-                url: '/images/jaw-dev.png',
+                url: '/assets/images/jaw-dev.png',
                 backgroundColor: '#29261C',
             }
         ],
@@ -268,7 +268,7 @@ const projects = ref([
         ],
         images: [
             {
-                url: '/images/training-log-v2.png',
+                url: '/assets/images/training-log-v2.png',
                 backgroundColor: '#43464D'
             }
         ],
@@ -290,7 +290,7 @@ const projects = ref([
         descriptions: ["Built a check-in systems for amarillo college computer lab to track student and guest to track each visit during covid period!"],
         images: [
             {
-                url: '/images/check-in-systems.png',
+                url: '/assets/images/check-in-systems.png',
                 backgroundColor: '#2F4C66'
             }
         ],
@@ -334,7 +334,7 @@ const projects = ref([
         descriptions: ["Built a full-stack Nodejs web application for my coaching services. I have implemented E-commerce style where user able to buy specific services. I wrote the whole style from scratch; did not use any CSS library!"],
         images: [
             {
-                url: '/images/jaw-strength.png',
+                url: '/assets/images/jaw-strength.png',
                 backgroundColor: '#52648A'
             }
         ],
@@ -387,7 +387,7 @@ const projects = ref([
         subtitle: '(web)',
         descriptions: ["Build full-stack web application to log training videos with respect to training split. This app has features such as users being able to post their training videos and comments. I intend to use it personally and also for my future clients."],
         images: [{
-            url: '/images/training-log-v1.png',
+            url: '/assets/images/training-log-v1.png',
             backgroundColor: '#507C6B'
         }
         ],
@@ -456,7 +456,7 @@ const projects = ref([
         descriptions: ["Built a simply over engineered full-stack web application that spits out unique login credentials. I was inspired by the window's version that I've developed last year; I wanted to abe to use it anywhere I go. Its font-end is running as NGINX as static file and Nodejs as an API end point."],
         images: [
             {
-                url: '/images/unique-login-web.png',
+                url: '/assets/images/unique-login-web.png',
                 backgroundColor: '#1A5297',
             }
         ],
@@ -529,13 +529,13 @@ const projects = ref([
         subtitle: '(electron)',
         descriptions: ["Built this cross platform desktop application for the local restaurant called 'Sushi House', while I was working there as sushi chef. This application saved numerous of time for the owner to create shifts for server ever single week within a click of a button!"],
         video: {
-            url: '/videos/shift-scheduler.mp4',
+            url: '/assets/videos/shift-scheduler.mp4',
             title: 'Shift scheduler demonstration',
             label: 'video preview',
         },
         images: [
             {
-                url: '/images/shift_scheduler.jpg',
+                url: '/assets/images/shift_scheduler.jpg',
                 backgroundColor: '#42C4BA'
             }
         ],
@@ -574,14 +574,14 @@ const projects = ref([
         subtitle: '(windows, c#)',
         descriptions: ["Built this window's form desktop application for my brother who likes to generate random passwords and unique usernames for his gaming credentials. It uses combination of animal names, verbs, adjectives and names for username and random alphabets, numeric and special characters for password."],
         video: {
-            url: '/videos/unique-login.mp4',
+            url: '/assets/videos/unique-login.mp4',
             title: 'Unique login demonstration',
             label: 'video preview',
         },
         images: [
             {
 
-                url: '/images/unique_login.jpg',
+                url: '/assets/images/unique_login.jpg',
                 backgroundColor: "#DF3E07"
             }
         ],
@@ -616,7 +616,7 @@ const projects = ref([
         descriptions: ["A free application that is written in native technology for Web, iOS, and Android. I've built this in needs of free resource for strength athletes that could not afford coaching service. The app is available to to download on both iOS and Android AppStore."],
         images: [
             {
-                url: '/images/attempt_calculator.jpg',
+                url: '/assets/images/attempt_calculator.jpg',
                 backgroundColor: '#E8032E'
             }
         ],
@@ -681,7 +681,7 @@ const projects = ref([
         descriptions: ["A window desktop application that I've contributed which was intend to built for city of Amarillo, TX as a classroom project. The CareAmarillo System enables system users to find information on registered human services as well as emergency shelters."],
         images: [
             {
-                url: '/images/care_amarillo.jpg',
+                url: '/assets/images/care_amarillo.jpg',
                 backgroundColor: '#F0F0F0'
             }
         ],

@@ -5,8 +5,14 @@ const projects = ref([
         title: 'gains',
         subtitle: '(pwa, rest api)',
         wip: true,
-        descriptions: ['lorem Suscipit, accusantium iusto vel ipsum sequi fugiat est libero sunt nam eligendi, aperiam itaque asperiores nobis facilis doloremque ullam blanditiis rerum voluptas!'],
+        current: true,
+        descriptions: ["A progressive web app to track all aspect of strength training to help you load the right amount of weight at the right time."],
         technologies: [
+            {
+                "name": "redis",
+                backgroundColor: 'bg-red-900',
+                "textColor": 'text-white'
+            },
             {
                 "name": "▶️ github action (ci/cd)",
                 backgroundColor: 'bg-sky-600',
@@ -68,7 +74,7 @@ const projects = ref([
         links: [
             {
                 'name': 'demo',
-                'url': 'https://www.allkindsofgains.app/'
+                'url': 'https://gains.jaw.dev'
             },
             {
                 'name': 'github',
@@ -80,7 +86,7 @@ const projects = ref([
     {
         title: 'jaw.dev',
         subtitle: '(web, serverless)',
-        descriptions: ['A serverless web application to display list of projects.'],
+        descriptions: ['A serverless web application to display list of projects I have built.'],
         technologies: [
             {
                 "name": "▶️ github action (ci/cd)",
@@ -141,8 +147,12 @@ const projects = ref([
         ],
         links: [
             {
-                'name': 'demo',
+                'name': 'vercel demo',
                 'url': 'https://jaw-dev-jaw.vercel.app/'
+            },
+            {
+                'name': 'aws light sail demo',
+                'url': 'https://jaw.dev/'
             },
             {
                 'name': 'github',
@@ -154,7 +164,7 @@ const projects = ref([
     {
         title: 'tvl-bucket',
         subtitle: '(rest api, microservice)',
-        descriptions: ["Video upload api"],
+        descriptions: ["A simple micro service to upload and store video into raspberry pi."],
         technologies: [
             {
                 "name": "ffmpeg",
@@ -383,74 +393,6 @@ const projects = ref([
     },
 
     {
-        title: 'training log v1',
-        subtitle: '(web)',
-        descriptions: ["Build full-stack web application to log training videos with respect to training split. This app has features such as users being able to post their training videos and comments. I intend to use it personally and also for my future clients."],
-        images: [{
-            url: '/images/training-log-v1.png',
-            backgroundColor: '#507C6B'
-        }
-        ],
-        technologies: [
-            {
-                "name": "🐳 docker",
-                backgroundColor: 'bg-sky-900',
-                "textColor": 'text-white'
-            },
-            {
-                "name": "🐙 docker compose",
-                backgroundColor: 'bg-sky-800',
-                "textColor": 'text-white'
-            },
-            {
-                "name": "🐘 postgres",
-                backgroundColor: 'bg-blue-900',
-                "textColor": 'text-white'
-            },
-            {
-                "name": "💎 node",
-                backgroundColor: 'bg-green-900',
-                "textColor": 'text-white'
-            },
-            {
-                "name": "express",
-                backgroundColor: 'bg-black',
-                "textColor": 'text-white'
-            },
-            {
-                "name": "Materialized",
-                backgroundColor: 'bg-violet-900',
-                "textColor": 'text-white'
-            },
-            {
-                "name": "javascript",
-                backgroundColor: 'bg-yellow-500',
-                "textColor": 'text-white'
-            },
-            {
-                "name": "🐧 linux (debian)",
-                backgroundColor: 'bg-gray-500',
-                "textColor": 'text-white'
-            },
-            {
-                "name": "N nginx",
-                backgroundColor: 'bg-green-600',
-                "textColor": 'text-white'
-            },
-        ],
-        links: [
-            {
-                'name': 'demo',
-                'url': 'https://training-log-v1.jaw.dev/'
-            },
-            {
-                'name': 'github',
-                'url': 'https://github.com/wajeht/training-log-v1'
-            }
-        ]
-    },
-
-    {
         title: 'unique login',
         subtitle: '(web, rest api)',
         descriptions: ["Built a simply over engineered full-stack web application that spits out unique login credentials. I was inspired by the window's version that I've developed last year; I wanted to abe to use it anywhere I go. Its font-end is running as NGINX as static file and Nodejs as an API end point."],
@@ -523,6 +465,76 @@ const projects = ref([
             }
         ]
     },
+
+    {
+        title: 'training log v1',
+        subtitle: '(web)',
+        descriptions: ["Build full-stack web application to log training videos with respect to training split. This app has features such as users being able to post their training videos and comments. I intend to use it personally and also for my future clients."],
+        images: [{
+            url: '/images/training-log-v1.png',
+            backgroundColor: '#507C6B'
+        }
+        ],
+        technologies: [
+            {
+                "name": "🐳 docker",
+                backgroundColor: 'bg-sky-900',
+                "textColor": 'text-white'
+            },
+            {
+                "name": "🐙 docker compose",
+                backgroundColor: 'bg-sky-800',
+                "textColor": 'text-white'
+            },
+            {
+                "name": "🐘 postgres",
+                backgroundColor: 'bg-blue-900',
+                "textColor": 'text-white'
+            },
+            {
+                "name": "💎 node",
+                backgroundColor: 'bg-green-900',
+                "textColor": 'text-white'
+            },
+            {
+                "name": "express",
+                backgroundColor: 'bg-black',
+                "textColor": 'text-white'
+            },
+            {
+                "name": "Materialized",
+                backgroundColor: 'bg-violet-900',
+                "textColor": 'text-white'
+            },
+            {
+                "name": "javascript",
+                backgroundColor: 'bg-yellow-500',
+                "textColor": 'text-white'
+            },
+            {
+                "name": "🐧 linux (debian)",
+                backgroundColor: 'bg-gray-500',
+                "textColor": 'text-white'
+            },
+            {
+                "name": "N nginx",
+                backgroundColor: 'bg-green-600',
+                "textColor": 'text-white'
+            },
+        ],
+        links: [
+            // {
+            //     'name': 'demo',
+            //     'url': 'https://training-log-v1.jaw.dev/'
+            // },
+            {
+                'name': 'github',
+                'url': 'https://github.com/wajeht/training-log-v1'
+            }
+        ]
+    },
+
+
 
     {
         title: 'shift scheduler',
@@ -717,6 +729,6 @@ const projects = ref([
         <Card :class="{ 'mb-4': i != projects?.length - 1 }" class="lg:h-full lg:w-full lg:break-inside-avoid-column"
             v-once v-for="p, i in projects" :key="i" :title="p.title" :subtitle="p.subtitle" :wip="p.wip"
             :video="p.video" :descriptions="p.descriptions" :technologies="p.technologies" :images="p.images"
-            :links="p.links" />
+            :current="p.current" :links="p.links" />
     </div>
 </template>

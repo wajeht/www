@@ -26,6 +26,7 @@ const props = defineProps<{
     subtitle?: string;
     title?: string;
     wip?: boolean;
+    current?: boolean;
     images?: Image[];
     video?: video;
     descriptions?: string[];
@@ -40,7 +41,9 @@ const hydrate = ref(false);
 
 <template>
     <article @mouseenter="hydrate = true" @mouseleave="hydrate = false"
-        class=" flex flex-col gap-3 bg-[color:#252420] p-5 rounded-sm hover:bg-[color:#2A2924]">
+        :class="{ 'outline outline-1 outline-[color:#6D685F]': current }" class=" flex flex-col gap-3 bg-[color:#252420] p-5 rounded-sm hover:bg-[color:#2A2924]
+        
+        ">
 
         <!-- title and description -->
         <div :class="{ 'flex flex-col gap-1': descriptions?.length && title?.length && technologies?.length }">
@@ -56,19 +59,19 @@ const hydrate = ref(false);
 
                 <!-- wip -->
                 <small v-if="wip"
-                    class="font-light text-[color:#252420] hover:text-[color:#15140E] px-2 rounded-md grayscale italic bg-[color:#F89B4B]"
-                    :class="{ 'grayscale-0': hydrate }">work
+                    class="font-light text-[color:#252420]  px-2 rounded-md grayscale italic bg-[color:#F89B4B]"
+                    :class="{ 'grayscale-0': hydrate || current }">work
                     in
                     progress</small>
             </span>
 
             <nuxt-img v-for="m, i in images" :key="i" :src="m.url"
                 class="border-2 border-[color:#3C3C3C] bg-[color:#1B1A12] grayscale  object-contain lg:object-center rounded-sm max-h-[15rem] mb-1"
-                :style="{ 'background-color': m.backgroundColor }" :class="{ 'grayscale-0': hydrate === true }" />
+                :style="{ 'background-color': m.backgroundColor }" :class="{ 'grayscale-0': hydrate || isNew }" />
 
             <!-- badges -->
             <small v-if="technologies?.length" class="flex flex-wrap gap-1 mb-2 grayscale"
-                :class="{ 'grayscale-0': hydrate === true }">
+                :class="{ 'grayscale-0': hydrate || current }">
                 <small v-for="t, i in technologies" :key="i" :class="t.backgroundColor, t.textColor"
                     class="px-1 py-0.5 text-xs rounded-xl  flex-none">
                     <small class="px-0.5">{{  t.name  }}</small>

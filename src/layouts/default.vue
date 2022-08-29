@@ -31,6 +31,9 @@ function generateRandomPicture(): void {
   router.push('/');
 }
 
+
+
+
 </script>
 <template>
   <div class="lg:flex">

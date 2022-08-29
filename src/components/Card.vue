@@ -50,8 +50,8 @@ const hydrate = ref(false);
 
                 <!-- title -->
                 <span class="flex flex-wrap items-center gap-2">
-                    <h1 class="text-2xl text-[color:#FBF0DF]">{{ title }}</h1>
-                    <span class="font-light text-[color:#D4D3D2]">{{ subtitle }}</span>
+                    <h1 class="text-2xl text-[color:#FBF0DF]">{{  title  }}</h1>
+                    <span class="font-light text-[color:#D4D3D2]">{{  subtitle  }}</span>
                 </span>
 
                 <!-- wip -->
@@ -62,23 +62,22 @@ const hydrate = ref(false);
                     progress</small>
             </span>
 
-            <!-- image -->
-            <img v-for="m, i in images" :key="i" :src="m.url"
+            <nuxt-img v-for="m, i in images" :key="i" :src="m.url"
                 class="border-2 border-[color:#3C3C3C] bg-[color:#1B1A12] grayscale  object-contain lg:object-center rounded-sm max-h-[15rem] mb-1"
-                :style="{ 'background-color': m.backgroundColor }" :class="{ 'grayscale-0': hydrate === true }">
+                :style="{ 'background-color': m.backgroundColor }" :class="{ 'grayscale-0': hydrate === true }" />
 
             <!-- badges -->
             <small v-if="technologies?.length" class="flex flex-wrap gap-1 mb-2 grayscale"
                 :class="{ 'grayscale-0': hydrate === true }">
                 <small v-for="t, i in technologies" :key="i" :class="t.backgroundColor, t.textColor"
                     class="px-1 py-0.5 text-xs rounded-xl  flex-none">
-                    <small class="px-0.5">{{ t.name }}</small>
+                    <small class="px-0.5">{{  t.name  }}</small>
                 </small>
             </small>
 
             <!-- description -->
             <span v-if="descriptions?.length" class="flex flex-col gap-2">
-                <p v-for="d, i in descriptions" :key="i" class="text-[color:#D4D3D2] font-light">{{ d }}</p>
+                <p v-for="d, i in descriptions" :key="i" class="text-[color:#D4D3D2] font-light">{{  d  }}</p>
             </span>
         </div>
 
@@ -88,7 +87,7 @@ const hydrate = ref(false);
             <!-- demo/github -->
             <a v-for="l, i in links" :key="i" :href="l.url" target="_blank"
                 class="py-1 px-4 rounded-sm font-light hover:outline  hover:outline-[color:#37362F] hover:bg-[color:#0B0A08] bg-[color:#15140E] text-[color:#D4D3D2] hover:text-[color:#FBF0DF]">{{
-                        l.name
+                 l.name 
                 }}</a>
 
             <!-- modal -->

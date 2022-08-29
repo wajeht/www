@@ -573,12 +573,12 @@ const projects = ref([
                 "textColor": 'text-white'
             }
         ],
-        links: [
-            {
-                'name': 'github',
-                'url': 'https://github.com/wajeht/shift-scheduler'
-            }
-        ]
+        // links: [
+        // {
+        //     'name': 'github',
+        //     'url': 'https://github.com/wajeht/shift-scheduler'
+        // }
+        // ]
     },
 
     {

@@ -67,7 +67,7 @@ const hydrate = ref(false);
 
             <nuxt-img v-for="m, i in images" :key="i" :src="m.url"
                 class="border-2 border-[color:#3C3C3C] bg-[color:#1B1A12] grayscale  object-contain lg:object-center rounded-sm max-h-[15rem] mb-1"
-                :style="{ 'background-color': m.backgroundColor }" :class="{ 'grayscale-0': hydrate || isNew }" />
+                :style="{ 'background-color': m.backgroundColor }" :class="{ 'grayscale-0': hydrate || current }" />
 
             <!-- badges -->
             <small v-if="technologies?.length" class="flex flex-wrap gap-1 mb-2 grayscale"

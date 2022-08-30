@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-import projects from '../utils/projects.json'
+import projects from '../utils/projects'
 
 </script>
 <template>

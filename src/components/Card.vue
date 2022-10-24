@@ -85,7 +85,7 @@
         <small
           v-for="(t, i) in technologies"
           :key="i"
-          :class="(t.backgroundColor, t.textColor)"
+          :class="t.backgroundColor, t.textColor"
           class="px-1 py-0.5 text-xs rounded-xl flex-none"
         >
           <small class="px-0.5">{{ t.name }}</small>

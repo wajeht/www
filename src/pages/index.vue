@@ -25,7 +25,7 @@
 
   ::-webkit-scrollbar {
     width: 0;
-    background: transparent;
+    background: transparent !important;
   }
 
   body {

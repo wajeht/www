@@ -18,6 +18,16 @@
 </template>
 
 <style>
+  html {
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+  }
+
   body {
     background-color: #0b0a08 !important;
   }

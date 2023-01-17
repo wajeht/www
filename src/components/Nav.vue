@@ -31,8 +31,9 @@ const route = useRoute();
                     href="https://www.github.com/wajeht" target="_blank">github ↗️</a>
                 <a class="hover:underline grayscale hover:grayscale-0 hover:text-[color:#FBF0DF] flex-none"
                     href=" https://www.linkedin.com/in/kyawsny/" target="_blank">linkedin ↗️</a>
+                <a class="hover:underline grayscale hover:grayscale-0 hover:text-[color:#FBF0DF] flex-none"
+                    href="https://www.instagram.com/thejaww" target="_blank">instagram ↗️</a>
             </span>
         </nav>
     </div>
-
 </template>

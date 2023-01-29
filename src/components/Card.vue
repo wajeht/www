@@ -1,39 +1,39 @@
 <script setup lang="ts">
-  type Technology = {
-    name: string;
-    textColor: string;
-    backgroundColor: string;
-  };
+type Technology = {
+  name: string;
+  textColor: string;
+  backgroundColor: string;
+};
 
-  type Link = {
-    name: string;
-    url: string;
-  };
+type Link = {
+  name: string;
+  url: string;
+};
 
-  type Image = {
-    url: string;
-    backgroundColor: string;
-  };
+type Image = {
+  url: string;
+  backgroundColor: string;
+};
 
-  type video = {
-    title: string;
-    label: string;
-    url: string;
-  };
+type video = {
+  title: string;
+  label: string;
+  url: string;
+};
 
-  const props = defineProps<{
-    subtitle?: string;
-    title?: string;
-    wip?: boolean;
-    current?: boolean;
-    images?: Image[];
-    video?: video;
-    descriptions?: string[];
-    technologies?: Technology[];
-    links?: Link[];
-  }>();
+const props = defineProps<{
+  subtitle?: string;
+  title?: string;
+  wip?: boolean;
+  current?: boolean;
+  images?: Image[];
+  video?: video;
+  descriptions?: string[];
+  technologies?: Technology[];
+  links?: Link[];
+}>();
 
-  const hydrate = ref(false);
+const hydrate = ref(false);
 </script>
 
 <template>
@@ -71,6 +71,7 @@
         :key="i"
         :src="m.url"
         :placeholder="[100]"
+        style="min-height: 240px"
         class="border-2 border-[color:#3C3C3C] bg-[color:#1B1A12] grayscale object-contain lg:object-center rounded-sm max-h-[15rem] mb-1"
         :style="{ 'background-color': m.backgroundColor }"
         :class="{ 'grayscale-0': hydrate || current }"
@@ -85,7 +86,7 @@
         <small
           v-for="(t, i) in technologies"
           :key="i"
-          :class="t.backgroundColor, t.textColor"
+          :class="(t.backgroundColor, t.textColor)"
           class="px-1 py-0.5 text-xs rounded-xl flex-none"
         >
           <small class="px-0.5">{{ t.name }}</small>

@@ -14,16 +14,13 @@ module.exports = {
           '60%': { transform: 'rotate(10.0deg)' },
           '70%': { transform: 'rotate(0.0deg)' },
           '100%': { transform: 'rotate(0.0deg)' },
-        }
+        },
       },
       animation: {
-        wave: 'wave 1.5s infinite'
-      }
+        wave: 'wave 1.5s infinite',
+      },
     },
   },
   plugins: [],
-  purge: [
-    './public/**/*.html',
-    './src/**/*.{js,jsx,ts,tsx,vue}',
-  ],
-}
+  purge: ['./public/**/*.html', './src/**/*.{js,jsx,ts,tsx,vue}'],
+};

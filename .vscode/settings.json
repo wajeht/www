@@ -15,5 +15,6 @@
         "wajeht",
         "winfroms"
     ],
-    "typescript.tsdk": "node_modules/typescript/lib"
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "dotenv.enableAutocloaking": false
 }

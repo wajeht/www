@@ -2,8 +2,8 @@ export default [
   {
     title: 'close-powerlifting',
     subtitle: '(rest api)',
-    wip: true,
-    current: true,
+    wip: false,
+    current: false,
     descriptions: ['An intuitive api for open-powerlifting database.'],
     technologies: [
       {
@@ -77,8 +77,8 @@ export default [
   {
     title: 'gains',
     subtitle: '(pwa, rest api)',
-    wip: true,
-    current: true,
+    wip: false,
+    current: false,
     descriptions: [
       'A progressive web app to track all aspect of strength training to help you load the right amount of weight at the right time.',
     ],

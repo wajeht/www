@@ -4,7 +4,9 @@ const route = useRoute();
 
 <template>
   <div class="flex justify-center lg:justify-end">
-    <nav class="flex flex-wrap lg:flex-col lg:gap-3 gap-3 font-light text-[color:#D4D3D2]">
+    <nav
+      class="flex flex-wrap lg:flex-col lg:gap-3 gap-3 font-light text-[color:#D4D3D2] items-center justify-center"
+    >
       <span class="flex gap-3 sm:flex-row lg:flex-col lg:gap-0">
         <NuxtLink
           to="/projects"

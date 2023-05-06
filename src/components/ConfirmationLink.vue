@@ -1,13 +1,15 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 
-const showModal = ref(false);
-
-const props = defineProps<{
+type Props = {
   content: string;
   label: string;
   link: string;
-}>();
+};
+
+const showModal = ref<boolean>(false);
+
+const props = defineProps<Props>();
 
 function go(): void {
   window.open(props.link);

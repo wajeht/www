@@ -15,25 +15,27 @@ type Image = {
   backgroundColor: string;
 };
 
-type video = {
+export type Video = {
   title: string;
   label: string;
   url: string;
 };
 
-const props = defineProps<{
+export type Props = {
   subtitle?: string;
   title?: string;
   wip?: boolean;
   current?: boolean;
   images?: Image[];
-  video?: video;
+  video?: Video;
   descriptions?: string[];
   technologies?: Technology[];
   links?: Link[];
-}>();
+};
 
-const hydrate = ref(false);
+const props = defineProps<Props>();
+
+const hydrate = ref<boolean>(false);
 </script>
 
 <template>

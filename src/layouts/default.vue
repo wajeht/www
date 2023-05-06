@@ -1,27 +1,20 @@
 <script setup lang="ts">
 import { ref } from 'vue';
+
 const route = useRoute();
 const router = useRouter();
 
-type Url = {
-  url: string;
-};
+type Url = { url: string };
 
 const pictures = ref<Url[]>([
-  {
-    url: '/images/blue.jpg',
-  },
-  {
-    url: '/images/jaw.jpg',
-  },
-  {
-    url: '/images/strength.jpeg',
-  },
+  { url: '/images/blue.jpg' },
+  { url: '/images/jaw.jpg' },
+  { url: '/images/strength.jpeg' },
 ]);
 
-const randomProfilePicture = ref('/images/jaw.jpg');
+const randomProfilePicture = ref<string>('/images/jaw.jpg');
 
-const currentImageIndex = ref(-1);
+const currentImageIndex = ref<number>(-1);
 
 function generateRandomPicture(): void {
   if (currentImageIndex.value === 2) currentImageIndex.value = -1;

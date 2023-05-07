@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
+import ColorModeSwitcher from './ColorModeSwitcher.vue';
 
 const route = useRoute();
 
@@ -76,7 +77,11 @@ function generateRandomPicture(): void {
         <!-- nav -->
         <Nav />
       </div>
+
+      <ColorModeSwitcher />
     </div>
+
+    <!-- light/dark -->
 
     <!-- side bar copyright -->
     <div class="hidden text-xs font-light lg:block text-zinc-500">

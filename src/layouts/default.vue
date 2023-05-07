@@ -10,7 +10,7 @@ const route = useRoute();
 
     <!-- main -->
     <main
-      class="flex flex-col justify-between gap-3 min-h-screen lg:h-screen lg:overflow-scroll lg:flex-[65%] bg-[color:#15140E] text-[color:#FBF0DF] p-5"
+      class="flex flex-col justify-between gap-3 min-h-screen lg:h-screen lg:overflow-scroll lg:flex-[65%] bg-white dark:bg-[color:#15140E] text-[color:#FBF0DF] p-5"
       :class="{ 'h-[calc(100vh-249px)]': route.path !== '/projects' }"
     >
       <!-- slot -->

@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 
+const route = useRoute();
+
 type Url = { url: string };
 
 const pictures = ref<Url[]>([
@@ -19,7 +21,11 @@ function generateRandomPicture(): void {
   if (currentImageIndex.value === 2) currentImageIndex.value = -1;
   currentImageIndex.value++;
   randomProfilePicture.value = pictures.value[currentImageIndex.value].url.toString();
-  router.push('/');
+
+  // dont' redirect if it was on home page, just change image
+  if (route.path != '/') {
+    router.push('/');
+  }
 }
 </script>
 

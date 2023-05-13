@@ -24,7 +24,7 @@ if (redirectedFromJawStrength.value === true) {
     '- Jaw',
   ];
 } else {
-  descriptions.value = ['kyawsny at gmail dot com'];
+  descriptions.value = ['hi at jaw dot dev'];
 }
 </script>
 

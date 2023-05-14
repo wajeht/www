@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import Sidebar from '~/components/Sidebar.vue';
+import ColorModeSwitcher from '~/components/ColorModeSwitcher.vue';
 
 const route = useRoute();
 </script>
@@ -10,7 +11,7 @@ const route = useRoute();
 
     <!-- main -->
     <main
-      class="flex flex-col justify-between gap-3 min-h-screen lg:h-screen lg:overflow-scroll lg:flex-[65%] bg-[color:#15140E] text-[color:#FBF0DF] p-5"
+      class="flex flex-col justify-between gap-3 min-h-screen lg:h-screen lg:overflow-scroll lg:flex-[65%] bg-[#E6E6E6] dark:bg-[color:#15140E] text-[color:#FBF0DF] p-5"
       :class="{ 'h-[calc(100vh-249px)]': route.path !== '/projects' }"
     >
       <!-- slot -->
@@ -20,7 +21,10 @@ const route = useRoute();
 
       <!-- copyright -->
       <div class="mt-2 text-xs font-light text-center lg:hidden sm:block text-zinc-500">
-        © 2022 jaw.dev. Made with ❤️ by
+        <!-- light and dark -->
+        <ColorModeSwitcher />
+
+        <span> © 2022 jaw.dev. Made with ❤️ by </span>
         <a
           class="hover:text-[color:#D4D3D2]"
           href="https://www.github.com/wajeht/jaw-dev"

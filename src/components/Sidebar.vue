@@ -31,7 +31,7 @@ function generateRandomPicture(): void {
 
 <template>
   <aside
-    class="flex flex-col justify-between bg-[color:#0B0A08] text-[color:#D4D3D2] lg:h-screen lg:flex-[35%] p-5 text-end border-b border-b-[color:#252420] lg:border-r lg:border-r-[color:#252420]"
+    class="flex flex-col justify-between bg-[#1A1A1A] dark:bg-[color:#0B0A08] text-[#8D8D8D] dark:text-[color:#D4D3D2] lg:h-screen lg:flex-[35%] p-5 text-end border-b border-b-[color:#252420] lg:border-r lg:border-r-[color:#252420]"
   >
     <!-- top -->
     <div class="lg:mt-[170px]">
@@ -40,7 +40,7 @@ function generateRandomPicture(): void {
         <div class="flex justify-center lg:justify-end">
           <nuxt-img
             @click="generateRandomPicture()"
-            class="w-24 h-24 border-2 border-solid rounded-full sm:text-center sm:justify-center sm:content-center border-[color:#939290] hover:border-[color:#FBF0DF] hover:cursor-pointer"
+            class="w-24 h-24 border-2 border-solid rounded-full sm:text-center sm:justify-center sm:content-center border-[#8D8D8D] dark:border-[color:#939290] hover[#eeeeee] dark:hover:border-[color:#FBF0DF] hover:cursor-pointer"
             :src="randomProfilePicture"
           />
         </div>
@@ -54,7 +54,7 @@ function generateRandomPicture(): void {
               <!-- description name -->
               <span>
                 <span class="font-light"> hi there, this is </span>
-                <span class="font-bold text-[color:#FBF0DF]"> Jaw! </span>
+                <span class="font-bold text-[#EEEEEE] dark:text-[color:#FBF0DF]"> Jaw! </span>
               </span>
             </span>
 
@@ -80,7 +80,9 @@ function generateRandomPicture(): void {
 
     <!-- side bar copyright -->
     <div class="hidden text-xs font-light lg:block text-zinc-500">
-      © 2022 jaw.dev. Made with ❤️ by
+      <!-- light and dark -->
+      <ColorModeSwitcher />
+      <span> © 2022 jaw.dev. Made with ❤️ by </span>
       <a
         class="hover:text-[color:#D4D3D2]"
         href="https://www.github.com/wajeht/jaw-dev"

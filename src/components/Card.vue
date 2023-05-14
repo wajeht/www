@@ -42,8 +42,8 @@ const hydrate = ref<boolean>(false);
   <article
     @mouseenter="hydrate = true"
     @mouseleave="hydrate = false"
-    :class="{ 'outline outline-1 outline-[color:#6D685F]': current }"
-    class="flex flex-col gap-3 bg-[color:#252420] p-5 rounded-sm hover:bg-[color:#2A2924]"
+    :class="{ 'outline outline-1 outline-[#8D8D8D] dark:outline-[#6D685F]': current }"
+    class="flex flex-col gap-3 bg-[#FBFBFB] dark:bg-[#252420] p-5 rounded-sm shadow-md hover:bg-[#ffffff] dark:hover:bg-[color:#2A2924]"
   >
     <!-- title and description -->
     <div
@@ -55,8 +55,8 @@ const hydrate = ref<boolean>(false);
       <span class="flex items-center justify-between sm:flex-wrap">
         <!-- title -->
         <span class="flex flex-wrap items-center gap-2">
-          <h1 class="text-2xl text-[color:#FBF0DF]">{{ title }}</h1>
-          <span class="font-light text-[color:#D4D3D2]">{{ subtitle }}</span>
+          <h1 class="text-2xl text-[#1A1A1A] dark:text-[color:#FBF0DF]">{{ title }}</h1>
+          <span class="font-light text-[#1A1A1A] dark:text-[color:#D4D3D2]">{{ subtitle }}</span>
         </span>
 
         <!-- wip -->
@@ -74,7 +74,7 @@ const hydrate = ref<boolean>(false);
         :src="m.url"
         :placeholder="[100]"
         style="min-height: 240px"
-        class="border-2 border-[color:#3C3C3C] bg-[color:#1B1A12] grayscale object-contain lg:object-center rounded-sm max-h-[15rem] mb-1"
+        class="border-2 border-[#939290] dark:border-[color:#3C3C3C] bg-[color:#1B1A12] grayscale object-contain lg:object-center rounded-sm max-h-[15rem] mb-1"
         :style="{ 'background-color': m.backgroundColor }"
         :class="{ 'grayscale-0': hydrate || current }"
       />
@@ -97,7 +97,11 @@ const hydrate = ref<boolean>(false);
 
       <!-- description -->
       <span v-if="descriptions?.length" class="flex flex-col gap-2">
-        <p v-for="(d, i) in descriptions" :key="i" class="text-[color:#D4D3D2] font-light">
+        <p
+          v-for="(d, i) in descriptions"
+          :key="i"
+          class="text-black dark:text-[color:#D4D3D2] font-light"
+        >
           {{ d }}
         </p>
       </span>
@@ -111,7 +115,7 @@ const hydrate = ref<boolean>(false);
         :key="i"
         :href="l.url"
         target="_blank"
-        class="py-1 px-4 rounded-sm font-light hover:outline hover:outline-[color:#37362F] hover:bg-[color:#0B0A08] bg-[color:#15140E] text-[color:#D4D3D2] hover:text-[color:#FBF0DF]"
+        class="py-1 px-4 rounded-sm font-light hover:outline hover:outline-[color:#37362F] hover:bg-[color:#0B0A08] bg-[#1A1A1A] dark:bg-[color:#15140E] text-[color:#D4D3D2] hover:text-[color:#FBF0DF]"
         >{{ l.name }}</a
       >
 

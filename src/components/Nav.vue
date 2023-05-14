@@ -7,7 +7,7 @@ const NAV_LINKS = [
     name: 'projects 📚',
   },
   {
-    url: '/about',
+    url: '/',
     name: 'about 👨‍💻',
   },
   {

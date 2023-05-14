@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import Sidebar from '~/components/Sidebar.vue';
-import ColorModeSwitcher from '~/components/ColorModeSwitcher.vue';
-
 const route = useRoute();
 </script>
 <template>

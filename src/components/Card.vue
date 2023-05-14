@@ -42,8 +42,8 @@ const hydrate = ref<boolean>(false);
   <article
     @mouseenter="hydrate = true"
     @mouseleave="hydrate = false"
-    :class="{ 'outline outline-1 outline-[color:#6D685F]': current }"
-    class="flex flex-col gap-3 bg-[color:#252420] p-5 rounded-sm hover:bg-[color:#2A2924]"
+    :class="{ 'outline outline-1 outline-[#6D685F]': current }"
+    class="flex flex-col gap-3 bg-[#FBFBFB] dark:bg-[#252420] p-5 rounded-sm shadow-md hover:bg-[#ffffff] dark:hover:bg-[color:#2A2924]"
   >
     <!-- title and description -->
     <div

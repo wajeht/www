@@ -32,7 +32,7 @@ function generateRandomPicture(): void {
 
 <template>
   <aside
-    class="flex flex-col justify-between bg-[color:#0B0A08] text-[color:#D4D3D2] lg:h-screen lg:flex-[35%] p-5 text-end border-b border-b-[color:#252420] lg:border-r lg:border-r-[color:#252420]"
+    class="flex flex-col justify-between bg-[#1A1A1A] dark:bg-[color:#0B0A08] text-[color:#D4D3D2] lg:h-screen lg:flex-[35%] p-5 text-end border-b border-b-[color:#252420] lg:border-r lg:border-r-[color:#252420]"
   >
     <!-- top -->
     <div class="lg:mt-[170px]">

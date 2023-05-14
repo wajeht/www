@@ -1,40 +1,38 @@
 <script setup lang="ts">
 const route = useRoute();
+
+const NAV_LINKS = [
+  {
+    url: '/projects',
+    name: 'projects 📚',
+  },
+  {
+    url: '/about',
+    name: 'about 👨‍💻',
+  },
+  {
+    url: '/contact',
+    name: 'contact 💌',
+  },
+];
 </script>
 
 <template>
   <div class="flex justify-center lg:justify-end">
     <nav
-      class="flex flex-wrap lg:flex-col lg:gap-3 gap-3 font-light text-[color:#D4D3D2] items-center justify-center"
+      class="flex flex-wrap lg:flex-col lg:gap-3 gap-3 font-light text-[#8D8D8D] dark:text-[color:#D4D3D2] items-center justify-center"
     >
       <span class="flex gap-3 sm:flex-row lg:flex-col lg:gap-0">
         <NuxtLink
-          to="/projects"
-          class="hover:underline grayscale hover:grayscale-0 hover:text-[color:#FBF0DF] flex-none"
+          v-for="link in NAV_LINKS"
+          :to="link.url"
+          class="hover:underline grayscale hover:grayscale-0 hover:text-[#eeeeee] dark:hover:text-[color:#FBF0DF] flex-none"
           :class="{
-            'font-bold text-[color:#FBF0DF] grayscale-0': route.path === '/projects',
-            grayscale: route.path !== '/projects',
+            'font-bold text-[#EEEEEE] dark:text-[color:#FBF0DF] grayscale-0':
+              route.path === `${link.url}`,
+            grayscale: route.path !== `${link.url}`,
           }"
-          >projects 📚
-        </NuxtLink>
-        <NuxtLink
-          to="/contact"
-          class="hover:underline grayscale hover:grayscale-0 hover:text-[color:#FBF0DF] flex-none"
-          :class="{
-            'font-bold text-[color:#FBF0DF] grayscale-0': route.path === '/contact',
-            grayscale: route.path !== '/contact',
-          }"
-          >contact 💌
-        </NuxtLink>
-        <NuxtLink
-          to="/"
-          class="hover:underline grayscale hover:grayscale-0 hover:text-[color:#FBF0DF] flex-none"
-          :class="{
-            'font-bold text-[color:#FBF0DF] grayscale-0': route.path === '/',
-            grayscale: route.path !== '/',
-          }"
-        >
-          about 👨‍💻‍</NuxtLink
+          >{{ link.name }}</NuxtLink
         >
       </span>
 

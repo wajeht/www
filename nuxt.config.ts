@@ -17,7 +17,7 @@ export default defineNuxtConfig({
   },
   devServerHandlers: [],
   srcDir: './src',
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/image-edge', '@nuxtjs/color-mode'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/image-edge', '@nuxtjs/color-mode', '@vueuse/nuxt',],
   tailwindcss: {
     cssPath: '/css/tailwind.css',
   },

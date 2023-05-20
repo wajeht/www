@@ -14,6 +14,7 @@
     "@nuxt/image-edge": "^1.0.0-27913696.5d122a3",
     "@nuxtjs/color-mode": "^3.2.0",
     "@nuxtjs/tailwindcss": "^6.6.7",
+    "@vueuse/components": "^10.1.2",
     "@vueuse/core": "^10.1.2",
     "@vueuse/nuxt": "^10.1.2",
     "consola": "^3.1.0",

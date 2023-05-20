@@ -32,9 +32,13 @@ function go(): void {
         <!-- background -->
         <div class="fixed inset-0 z-10 flex items-center justify-center p-4 bg-black bg-opacity-75">
           <!-- content -->
-          <div class="flex max-w-3xl flex-col gap-2 px-4 pt-5 pb-4 bg-[color:#252420] rounded-sm">
+          <div
+            class="flex max-w-3xl flex-col gap-2 px-4 pt-5 pb-4 bg-[#FBFBFB] dark:bg-[#252420] rounded-sm"
+          >
             <!-- title -->
-            <div class="flex flex-col gap-4 justify-between text-[color:#FBF0DF]">
+            <div
+              class="flex flex-col gap-4 justify-between text-[#1A1A1A] dark:text-[color:#FBF0DF]"
+            >
               <p>{{ content }}</p>
 
               <!-- buttons -->

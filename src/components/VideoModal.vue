@@ -26,11 +26,13 @@ const showModal = ref<boolean>(false);
         <!-- background -->
         <div class="fixed inset-0 z-10 flex items-center justify-center p-4 bg-black bg-opacity-75">
           <!-- content -->
-          <div class="flex max-w-3xl flex-col gap-2 px-4 pt-5 pb-4 bg-[color:#252420] rounded-sm">
+          <div
+            class="flex max-w-3xl flex-col gap-2 px-4 pt-5 pb-4 bg-[#FBFBFB] dark:bg-[#252420] rounded-sm"
+          >
             <!-- title -->
             <div class="flex justify-between">
               <!-- heading -->
-              <h1 class="text-2xl text-[color:#FBF0DF]">{{ title }}</h1>
+              <h1 class="text-2xl text-[#1A1A1A] dark:text-[color:#FBF0DF]">{{ title }}</h1>
 
               <!-- button -->
               <button

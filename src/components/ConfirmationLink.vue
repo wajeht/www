@@ -20,7 +20,7 @@ function go(): void {
   <span>
     <p
       @click="showModal = true"
-      class="hover:underline grayscale hover:grayscale-0 hover:text-[color:#FBF0DF] flex-none cursor-pointer"
+      class="hover:underline grayscale hover:grayscale-0 hover:text-[#eeeeee] dark:hover:text-[color:#FBF0DF] flex-none cursor-pointer"
     >
       {{ label }}
     </p>

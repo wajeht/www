@@ -38,13 +38,13 @@ const NAV_LINKS = [
 
       <span class="flex gap-3 sm:flex-row lg:flex-col lg:gap-0">
         <a
-          class="hover:underline grayscale hover:grayscale-0 hover:text-[color:#FBF0DF] flex-none"
+          class="hover:underline grayscale hover:grayscale-0 hover:text-[#eeeeee] dark:hover:text-[color:#FBF0DF] flex-none"
           href="https://www.github.com/wajeht"
           target="_blank"
           >github ↗️</a
         >
         <a
-          class="hover:underline grayscale hover:grayscale-0 hover:text-[color:#FBF0DF] flex-none"
+          class="hover:underline grayscale hover:grayscale-0 hover:text-[#eeeeee] dark:hover:text-[color:#FBF0DF] flex-none"
           href=" https://www.linkedin.com/in/kyawsny/"
           target="_blank"
           >linkedin ↗️</a

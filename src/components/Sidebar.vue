@@ -40,7 +40,7 @@ function generateRandomPicture(): void {
         <div class="flex justify-center lg:justify-end">
           <nuxt-img
             @click="generateRandomPicture()"
-            class="w-24 h-24 border-2 border-solid rounded-full sm:text-center sm:justify-center sm:content-center border-[#8D8D8D] dark:border-[color:#939290] hover-[#eeeeee] dark:hover:border-[color:#FBF0DF] hover:cursor-pointer"
+            class="w-24 h-24 border-2 border-solid rounded-full sm:text-center sm:justify-center sm:content-center border-[#8D8D8D] dark:border-[color:#939290] hover:border-[#eeeeee] dark:hover:border-[color:#FBF0DF] hover:cursor-pointer"
             :src="randomProfilePicture"
           />
         </div>

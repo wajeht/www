@@ -28,7 +28,6 @@ export default defineNuxtConfig({
     cssPath: '/css/tailwind.css',
   },
   plausible: {
-    apiHost: 'plausible.jaw.dev',
     domain: 'jaw.dev',
  },
 });

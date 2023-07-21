@@ -17,8 +17,17 @@ export default defineNuxtConfig({
   },
   devServerHandlers: [],
   srcDir: './src',
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/image-edge', '@nuxtjs/color-mode', '@vueuse/nuxt',],
+  modules: [
+    '@nuxtjs/tailwindcss',
+    '@nuxt/image-edge',
+    '@nuxtjs/color-mode',
+    '@vueuse/nuxt',
+    '@nuxtjs/plausible',
+  ],
   tailwindcss: {
     cssPath: '/css/tailwind.css',
   },
+  plausible: {
+    domain: 'plausible.jaw.dev'
+  }
 });

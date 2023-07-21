@@ -27,4 +27,7 @@ export default defineNuxtConfig({
   tailwindcss: {
     cssPath: '/css/tailwind.css',
   },
+  plausible: {
+    domain: 'jaw.dev',
+ },
 });

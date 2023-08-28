@@ -19,7 +19,7 @@
     "@vueuse/core": "^10.4.0",
     "@vueuse/nuxt": "^10.4.0",
     "consola": "^3.2.3",
-    "nuxt": "^3.6.5",
+    "nuxt": "3.6.5",
     "vue-writer": "^1.2.0"
   }
 }

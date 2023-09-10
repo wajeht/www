@@ -12,11 +12,6 @@ export default [
         textColor: 'text-white',
       },
       {
-        name: '💨 Tailwind',
-        backgroundColor: 'bg-sky-500',
-        textColor: 'text-white',
-      },
-      {
         name: '💎 node',
         backgroundColor: 'bg-green-900',
         textColor: 'text-white',

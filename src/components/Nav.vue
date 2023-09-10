@@ -49,11 +49,11 @@ const NAV_LINKS = [
           target="_blank"
           >linkedin ↗️</a
         >
-        <ConfirmationLink
+        <!-- <ConfirmationLink
           link="https://instagram.com/thejaww"
           label="instagram ↗️"
           content="all thoughts are my own!"
-        />
+        /> -->
       </span>
     </nav>
   </div>

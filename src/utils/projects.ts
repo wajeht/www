@@ -1,5 +1,65 @@
 export default [
   {
+    title: 'type',
+    subtitle: '(web, socket.io)',
+    wip: false,
+    current: false,
+    descriptions: ['real time javascript code editor with vim motion'],
+    technologies: [
+      {
+        name: '🐳 docker',
+        backgroundColor: 'bg-sky-900',
+        textColor: 'text-white',
+      },
+      {
+        name: '💨 Tailwind',
+        backgroundColor: 'bg-sky-500',
+        textColor: 'text-white',
+      },
+      {
+        name: '💎 node',
+        backgroundColor: 'bg-green-900',
+        textColor: 'text-white',
+      },
+      {
+        name: 'express',
+        backgroundColor: 'bg-black',
+        textColor: 'text-white',
+      },
+      {
+        name: '🐧 linux (debian)',
+        backgroundColor: 'bg-gray-500',
+        textColor: 'text-white',
+      },
+      {
+        name: 'N nginx',
+        backgroundColor: 'bg-green-600',
+        textColor: 'text-white',
+      },
+      {
+        name: '⚡️ socket.io',
+        backgroundColor: 'bg-red-600',
+        textColor: 'text-white',
+      },
+    ],
+    images: [
+      {
+        url: '/images/type.png',
+        backgroundColor: '#29261C',
+      },
+    ],
+    links: [
+      {
+        name: 'demo',
+        url: 'https://type.jaw.dev',
+      },
+      {
+        name: 'github',
+        url: 'https://www.github.com/wajeht/type',
+      },
+    ],
+  },
+  {
     title: 'close-powerlifting',
     subtitle: '(rest api)',
     wip: false,

@@ -6,7 +6,7 @@ const route = useRoute();
 type Url = { url: string };
 
 const pictures = ref<Url[]>([
-  { url: '/images/blue.jpg' },
+  // { url: '/images/blue.jpg' },
   { url: '/images/jaw.jpg' },
   { url: '/images/strength.jpeg' },
 ]);

@@ -1,6 +1,6 @@
-[<img src="https://raw.githubusercontent.com/wajeht/jaw-dev/main/.github/assets/screenshot.png" />](https://jaw.dev/)
+[<img src="https://raw.githubusercontent.com/wajeht/www/main/.github/assets/screenshot.png" />](https://jaw.dev/)
 
-# 👨 jaw.dev 
+# 👨 jaw.dev
 personal web space
 
 ## 📚 technologies
@@ -11,6 +11,6 @@ personal web space
 
 ## 👨‍💻 development
 see `getting-started.md` inside `docs` folder for more information
-	
+
 ## © license
 Distributed under the MIT License © [wajeht](https://www.github.com/wajeht/). See LICENSE for more information.

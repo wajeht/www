@@ -261,30 +261,21 @@ export default [
         backgroundColor: 'bg-green-600',
         textColor: 'text-white',
       },
-      {
-        name: '🔼 Vercel',
-        backgroundColor: 'bg-black',
-        textColor: 'text-white',
-      },
     ],
     images: [
       {
-        url: '/images/jaw-dev.png',
+        url: '/images/www.png',
         backgroundColor: '#29261C',
       },
     ],
     links: [
-      {
-        name: 'vercel demo',
-        url: 'https://jaw-dev-jaw.vercel.app/',
-      },
       {
         name: 'aws light sail demo',
         url: 'https://jaw.dev/',
       },
       {
         name: 'github',
-        url: 'https://www.github.com/wajeht/jaw-dev',
+        url: 'https://www.github.com/wajeht/www',
       },
     ],
   },

@@ -13,13 +13,13 @@
     "@nuxt/image": "^0.7.1",
     "@nuxt/image-edge": "^1.0.0-rc.1-28217290.de85e17",
     "@nuxtjs/color-mode": "^3.3.0",
-    "@nuxtjs/plausible": "^0.2.1",
+    "@nuxtjs/plausible": "^0.2.3",
     "@nuxtjs/tailwindcss": "^6.8.0",
-    "@vueuse/components": "^10.4.0",
+    "@vueuse/components": "^10.4.1",
     "@vueuse/core": "^10.4.0",
-    "@vueuse/nuxt": "^10.4.0",
+    "@vueuse/nuxt": "^10.4.1",
     "consola": "^3.2.3",
-    "nuxt": "3.6.5",
+    "nuxt": "^3.7.3",
     "vue-writer": "^1.2.0"
   }
 }

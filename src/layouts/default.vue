@@ -24,7 +24,7 @@ const route = useRoute();
         <span> © 2022 jaw.dev. Made with ❤️ by </span>
         <a
           class="hover:text-[color:#D4D3D2]"
-          href="https://www.github.com/wajeht/jaw-dev"
+          href="https://www.github.com/wajeht/www"
           target="_blank"
           >@wajeht</a
         >

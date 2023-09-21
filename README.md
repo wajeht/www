@@ -1,4 +1,4 @@
-[<img src="https://raw.githubusercontent.com/wajeht/www/main/.github/assets/screenshot.png" />](https://jaw.dev/)
+[<img src="https://raw.githubusercontent.com/wajeht/www/main/src/public/images/www.png" />](https://jaw.dev/)
 
 # 👨 jaw.dev
 personal web space

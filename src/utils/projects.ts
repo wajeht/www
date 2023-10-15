@@ -40,6 +40,66 @@ export default [
     ],
   },
   {
+    title: 'closed-carrot',
+    subtitle: '(web)',
+    wip: false,
+    current: false,
+    descriptions: ['amarillo\'s tech hub website '],
+    technologies: [
+      {
+        name: '🐳 docker',
+        backgroundColor: 'bg-sky-900',
+        textColor: 'text-white',
+      },
+      {
+        name: '🍀 mongodb',
+        backgroundColor: 'bg-blue-900',
+        textColor: 'text-white',
+      },
+      {
+        name: '💎 node',
+        backgroundColor: 'bg-green-900',
+        textColor: 'text-white',
+      },
+      {
+        name: 'express',
+        backgroundColor: 'bg-black',
+        textColor: 'text-white',
+      },
+      {
+        name: '🐧 linux (debian)',
+        backgroundColor: 'bg-gray-500',
+        textColor: 'text-white',
+      },
+      {
+        name: 'N nginx',
+        backgroundColor: 'bg-green-600',
+        textColor: 'text-white',
+      },
+      {
+        name: '⚛ react',
+        backgroundColor: 'bg-blue-900',
+        textColor: 'text-white',
+      },
+    ],
+    images: [
+      {
+        url: '/images/closed-carrot.png',
+        backgroundColor: '#FA7600',
+      },
+    ],
+    links: [
+      {
+        name: 'demo',
+        url: 'https://closed-carrot.jaw.dev',
+      },
+      {
+        name: 'github',
+        url: 'https://www.github.com/wajeht/closed-carrot',
+      },
+    ],
+  },
+  {
     title: 'type',
     subtitle: '(web, socket.io)',
     wip: false,

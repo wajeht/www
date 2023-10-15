@@ -1,5 +1,45 @@
 export default [
   {
+    title: 'capdb',
+    subtitle: '(cli, npm package)',
+    wip: false,
+    current: true,
+    descriptions: ['database management cli for docker environments'],
+    technologies: [
+      {
+        name: '🐳 docker',
+        backgroundColor: 'bg-sky-900',
+        textColor: 'text-white',
+      },
+      {
+        name: '💎 node',
+        backgroundColor: 'bg-green-900',
+        textColor: 'text-white',
+      },
+      {
+        name: 'npm',
+        backgroundColor: 'bg-red-900',
+        textColor: 'text-white',
+      },
+    ],
+    images: [
+      {
+        url: '/images/capdb.png',
+        backgroundColor: '#FFBEBF',
+      },
+    ],
+    links: [
+      {
+        name: 'demo',
+        url: 'https://www.npmjs.com/package/@wajeht/capdb',
+      },
+      {
+        name: 'github',
+        url: 'https://www.github.com/wajeht/capdb',
+      },
+    ],
+  },
+  {
     title: 'type',
     subtitle: '(web, socket.io)',
     wip: false,

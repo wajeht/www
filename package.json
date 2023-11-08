@@ -10,16 +10,16 @@
     "rmds": "find . -name '.DS_Store' -delete"
   },
   "devDependencies": {
-    "@nuxt/image": "^0.7.1",
-    "@nuxt/image-edge": "^1.0.0-rc.1-28217290.de85e17",
+    "@nuxt/image": "^1.0.0",
+    "@nuxt/image-edge": "^1.0.0-28324167.9427c1c",
     "@nuxtjs/color-mode": "^3.3.0",
-    "@nuxtjs/plausible": "^0.2.1",
-    "@nuxtjs/tailwindcss": "^6.8.0",
-    "@vueuse/components": "^10.4.0",
-    "@vueuse/core": "^10.4.0",
-    "@vueuse/nuxt": "^10.4.0",
+    "@nuxtjs/plausible": "^0.2.3",
+    "@nuxtjs/tailwindcss": "^6.9.4",
+    "@vueuse/components": "^10.5.0",
+    "@vueuse/core": "^10.5.0",
+    "@vueuse/nuxt": "^10.5.0",
     "consola": "^3.2.3",
-    "nuxt": "3.6.5",
+    "nuxt": "^3.8.1",
     "vue-writer": "^1.2.0"
   }
 }

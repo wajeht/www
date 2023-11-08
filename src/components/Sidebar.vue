@@ -1,12 +1,15 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref, computed } from 'vue';
 
 const route = useRoute();
+
+const currentYear = computed(() => {
+  return new Date().getFullYear();
+});
 
 type Url = { url: string };
 
 const pictures = ref<Url[]>([
-  // { url: '/images/blue.jpg' },
   { url: '/images/jaw.jpg' },
   { url: '/images/strength.jpeg' },
 ]);
@@ -22,7 +25,7 @@ function generateRandomPicture(): void {
   currentImageIndex.value++;
   randomProfilePicture.value = pictures.value[currentImageIndex.value].url.toString();
 
-  // dont' redirect if it was on home page, just change image
+  // don't redirect if it was on home page, just change image
   if (route.path != '/') {
     router.push('/');
   }
@@ -82,7 +85,7 @@ function generateRandomPicture(): void {
     <div class="hidden text-xs font-light lg:block text-zinc-500">
       <!-- light and dark -->
       <ColorModeSwitcher />
-      <span> © 2022 jaw.dev. Made with ❤️ by </span>
+      <span> © {{ currentYear }} jaw.dev. Made with ❤️ by </span>
       <a
         class="hover:text-[color:#D4D3D2]"
         href="https://www.github.com/wajeht/www"

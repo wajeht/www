@@ -1,9 +1,49 @@
 export default [
   {
-    title: 'capdb',
+    title: 'cdns',
     subtitle: '(cli, npm package)',
     wip: false,
     current: true,
+    descriptions: ['a cli tool to schedule automatic updates for cloudflare dns records'],
+    technologies: [
+      {
+        name: '🐳 docker',
+        backgroundColor: 'bg-sky-900',
+        textColor: 'text-white',
+      },
+      {
+        name: '💎 node',
+        backgroundColor: 'bg-green-900',
+        textColor: 'text-white',
+      },
+      {
+        name: 'npm',
+        backgroundColor: 'bg-red-900',
+        textColor: 'text-white',
+      },
+    ],
+    images: [
+      {
+        url: '/images/cdns.png',
+        backgroundColor: '#FA7600',
+      },
+    ],
+    links: [
+      {
+        name: 'demo',
+        url: 'https://www.npmjs.com/package/@wajeht/cdns',
+      },
+      {
+        name: 'github',
+        url: 'https://www.github.com/wajeht/cdns',
+      },
+    ],
+  },
+  {
+    title: 'capdb',
+    subtitle: '(cli, npm package)',
+    wip: false,
+    current: false,
     descriptions: ['database management cli for docker environments'],
     technologies: [
       {

@@ -379,64 +379,64 @@ export default [
       },
     ],
   },
-  {
-    title: 'tvl-bucket',
-    subtitle: '(rest api, microservice)',
-    descriptions: ['A simple micro service to upload and store video into raspberry pi.'],
-    technologies: [
-      {
-        name: 'ffmpeg',
-        backgroundColor: 'bg-green-700',
-        textColor: 'text-white',
-      },
-      {
-        name: '🐳 docker',
-        backgroundColor: 'bg-sky-900',
-        textColor: 'text-white',
-      },
-      {
-        name: '🐙 docker compose',
-        backgroundColor: 'bg-sky-800',
-        textColor: 'text-white',
-      },
-      {
-        name: '🐘 postgres',
-        backgroundColor: 'bg-blue-900',
-        textColor: 'text-white',
-      },
-      {
-        name: '💎 node',
-        backgroundColor: 'bg-green-900',
-        textColor: 'text-white',
-      },
-      {
-        name: 'express',
-        backgroundColor: 'bg-black',
-        textColor: 'text-white',
-      },
-      {
-        name: 'typescript',
-        backgroundColor: 'bg-sky-600',
-        textColor: 'text-white',
-      },
-      {
-        name: '🐧 linux (debian)',
-        backgroundColor: 'bg-gray-500',
-        textColor: 'text-white',
-      },
-      {
-        name: 'N nginx',
-        backgroundColor: 'bg-green-600',
-        textColor: 'text-white',
-      },
-    ],
-    links: [
-      {
-        name: 'github',
-        url: 'https://github.com/wajeht/tvl-bucket',
-      },
-    ],
-  },
+  // {
+  //   title: 'tvl-bucket',
+  //   subtitle: '(rest api, microservice)',
+  //   descriptions: ['A simple micro service to upload and store video into raspberry pi.'],
+  //   technologies: [
+  //     {
+  //       name: 'ffmpeg',
+  //       backgroundColor: 'bg-green-700',
+  //       textColor: 'text-white',
+  //     },
+  //     {
+  //       name: '🐳 docker',
+  //       backgroundColor: 'bg-sky-900',
+  //       textColor: 'text-white',
+  //     },
+  //     {
+  //       name: '🐙 docker compose',
+  //       backgroundColor: 'bg-sky-800',
+  //       textColor: 'text-white',
+  //     },
+  //     {
+  //       name: '🐘 postgres',
+  //       backgroundColor: 'bg-blue-900',
+  //       textColor: 'text-white',
+  //     },
+  //     {
+  //       name: '💎 node',
+  //       backgroundColor: 'bg-green-900',
+  //       textColor: 'text-white',
+  //     },
+  //     {
+  //       name: 'express',
+  //       backgroundColor: 'bg-black',
+  //       textColor: 'text-white',
+  //     },
+  //     {
+  //       name: 'typescript',
+  //       backgroundColor: 'bg-sky-600',
+  //       textColor: 'text-white',
+  //     },
+  //     {
+  //       name: '🐧 linux (debian)',
+  //       backgroundColor: 'bg-gray-500',
+  //       textColor: 'text-white',
+  //     },
+  //     {
+  //       name: 'N nginx',
+  //       backgroundColor: 'bg-green-600',
+  //       textColor: 'text-white',
+  //     },
+  //   ],
+  //   links: [
+  //     {
+  //       name: 'github',
+  //       url: 'https://github.com/wajeht/tvl-bucket',
+  //     },
+  //   ],
+  // },
   {
     title: 'training log v2',
     subtitle: '(web)',

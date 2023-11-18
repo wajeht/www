@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import { useHtmlClassObserver } from '../composables/use-html-class-observer';
+const { isDarkMode } = useHtmlClassObserver();
+
 const route = useRoute();
 </script>
 <template>
@@ -12,7 +15,8 @@ const route = useRoute();
       :class="{ 'h-[calc(100vh-249px)]': route.path !== '/projects' }"
     >
       <!-- slot -->
-      <div class="lg:max-w-[65%] lg:mt-[290px]">
+      <div class="lg:max-w-[65%] lg:mt-[290px] relative">
+        <div v-if="isDarkMode" class="fixed h-[300px] w-full z-10 left-[35%] hidden lg:block top-0 bg-gradient-to-t from-transparent from-0% via-[#13120d] via-50% to-[#15140E] to-100%" ></div>
         <slot />
       </div>
 

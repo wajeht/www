@@ -50,7 +50,7 @@ const NAV_LINKS = [
           >linkedin ↗️</a
         >
         <ConfirmationLink
-          link="https://instagram.com/thejaww"
+          link="https://instagram.com/konyeiiin"
           label="instagram ↗️"
           content="all thoughts are my own!"
         />
